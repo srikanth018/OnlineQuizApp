@@ -1,0 +1,139 @@
+
+
+<div
+  class="min-h-screen flex flex-col md:flex-row bg-gradient-to-br from-sky-200 via-sky-50 to-sky-100"
+>
+  <div class="md:w-1/2 flex items-center justify-center p-8">
+    <div class="space-y-6 text-center w-full max-w-lg">
+      <div class="flex flex-col items-center">
+        <h1
+          class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-sky-700 mb-2 font-mono tracking-tight"
+        >
+          T<span class="text-5xl">est</span>N<span class="text-5xl">est</span>
+        </h1>
+        <div
+          class="w-20 h-1.5 bg-gradient-to-r from-sky-700 to-sky-400 rounded-full mb-4"
+        ></div>
+      </div>
+
+      <h1 class="text-4xl font-bold text-sky-800">Welcome to our Nest</h1>
+      <p class="text-lg text-sky-700 font-mono">
+        Hub of Quizzes - Challenge for your learning
+      </p>
+    </div>
+  </div>
+  
+
+  <!-- Right Section -->
+  @if(!showSuccess){
+  <div class="md:w-1/2 flex items-center justify-center p-6">
+    <div
+      class="backdrop-blur-sm bg-white/30 p-8 rounded-2xl shadow-lg w-full max-w-md space-y-4 border border-white/20"
+    >
+      @if(isloading$){
+      <!-- Login Form -->
+      <div *ngIf="showLogin">
+        <h2 class="text-3xl font-bold text-center mb-4 text-sky-800 font-mono">
+          Login here
+        </h2>
+
+        <h2 class="text-lg font-bold text-center mb-4 text-sky-600 font-mono">
+          Enter the Nest to Test!
+        </h2>
+
+        <form (ngSubmit)="login()" [formGroup]="loginForm" class="space-y-4">
+          <div>
+            <label
+              for="email"
+              class="block mb-1 text-sm font-medium text-sky-700"
+              >Email</label
+            >
+            <input
+              id="email"
+              formControlName="email"
+              type="email"
+              class="border border-sky-300 rounded-lg w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+              placeholder="Enter your email"
+            />
+            <div
+              *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+            >
+              <p class="text-red-500 text-sm">Please enter a valid email.</p>
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="password"
+              class="block mb-1 text-sm font-medium text-sky-700"
+              >Password</label
+            >
+            <input
+              id="password"
+              type="password"
+              formControlName="password"
+              class="border border-sky-300 rounded-lg w-full px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+              placeholder="Enter your password"
+            />
+            <div
+              *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+            >
+              <p class="text-red-500 text-sm">Password field is required.</p>
+            </div>
+            <div *ngIf="errorMessage">
+              <p class="text-red-500 text-sm">{{ errorMessage }}</p>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full py-2 font-medium text-white bg-gradient-to-r from-sky-500 to-sky-700 rounded-lg shadow-md shadow-sky-200 hover:from-sky-600 hover:to-sky-800 transition disabled:bg-gray-400 disabled:shadow-none flex items-center justify-center"
+          >
+            <ng-container *ngIf="isloading$ | async; else loginText">
+              <div class="w-6 h-6">
+                <app-loading></app-loading>
+              </div>
+            </ng-container>
+
+            <ng-template #loginText>Login</ng-template>
+          </button>
+        </form>
+
+        <div class="text-center mt-4 text-sm text-sky-700">
+          Don't have an account?
+          <button
+            (click)="toggleForm()"
+            class="text-sky-800 font-medium hover:underline"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+
+      <!-- Register Form -->
+      <div *ngIf="!showLogin">
+        <app-register
+          (registrationSuccess)="handleRegistrationSuccess($event)"
+        ></app-register>
+        <div class="text-center mt-4 text-sm text-sky-700">
+          Already have an account?
+          <button
+            (click)="toggleForm()"
+            class="text-sky-800 font-medium hover:underline"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+      } @else {
+      <div style="width: 100px; height: 100px">
+        <app-loading></app-loading>
+      </div>
+      }
+    </div>
+  </div>
+  }@else {
+  <div class="md:w-1/2 flex items-center justify-center p-6">
+    <app-success [message]="successMessage"></app-success>
+  </div>
+  }
+</div>

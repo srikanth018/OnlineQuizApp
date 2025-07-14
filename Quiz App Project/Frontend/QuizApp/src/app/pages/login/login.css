@@ -1,0 +1,87 @@
+/* styles.css or component styles with ::ng-deep */
+::ng-deep .p-toast {
+  z-index: 9999;
+  top: 1rem;
+  right: 1rem;
+  width: 25rem;
+}
+
+::ng-deep .p-toast-message {
+  background: #efffea;
+  color: #05dc62;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+::ng-deep .p-toast-message-content {
+  display: flex;
+
+  align-items: flex-start;
+}
+
+::ng-deep .p-toast-message-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+::ng-deep .p-toast-summary {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+::ng-deep .p-toast-detail {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Severity specific styles */
+::ng-deep .p-toast-message-success {
+    background: #efffea;
+      color: #05dc62;
+  border-color: #22c55e;
+}
+
+::ng-deep .p-toast-message-success .p-toast-message-icon {
+  color: #22c55e;
+}
+
+::ng-deep .p-toast-message-info {
+  border-color: #3b82f6;
+}
+
+::ng-deep .p-toast-message-info .p-toast-message-icon {
+  color: #3b82f6;
+}
+
+::ng-deep .p-toast-message-warn {
+  border-color: #f59e0b;
+}
+
+::ng-deep .p-toast-message-warn .p-toast-message-icon {
+  color: #f59e0b;
+}
+
+::ng-deep .p-toast-message-error {
+        background: #ffeaea;
+      color: #ef4444;
+  border-color: #ef4444;
+}
+
+::ng-deep .p-toast-message-error .p-toast-message-icon {
+  color: #ef4444;
+}
+
+/* Close icon */
+::ng-deep .p-toast-icon-close {
+  margin-left: auto;
+  cursor: pointer;
+  color: #64748b;
+  transition: color 0.2s;
+}
+
+::ng-deep .p-toast-icon-close:hover {
+  color: #475569;
+}

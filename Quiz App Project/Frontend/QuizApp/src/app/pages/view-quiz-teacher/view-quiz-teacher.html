@@ -1,0 +1,220 @@
+<div class="p-4 min-h-screen">
+  <h2 class="text-2xl font-bold text-left mb-3 text-sky-800">
+    Quiz Summary - <span class="text-sky-600">{{quiz.title}}</span>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+    <div
+      class="bg-white shadow-sm rounded-lg p-4 flex items-center border-l-4 border-sky-500 hover:shadow-md transition-shadow duration-200"
+    >
+      <div class="bg-sky-100 p-3 rounded-full mr-4">
+        <i class="fas fa-user-graduate text-sky-600 text-lg"></i>
+      </div>
+      <div>
+        <p class="text-sm font-medium text-gray-500">Students Attended</p>
+        <span class="text-2xl font-bold text-gray-700"
+          >{{ completedQuizzes.length }}</span
+        >
+      </div>
+    </div>
+
+    <div
+      class="bg-white shadow-sm rounded-lg p-4 flex items-center border-l-4 border-sky-500 hover:shadow-md transition-shadow duration-200"
+    >
+      <div class="bg-sky-100 p-3 rounded-full mr-4">
+        <i class="fas fa-chart-line text-sky-600 text-lg"></i>
+      </div>
+      <div>
+        <p class="text-sm font-medium text-gray-500">Average Score</p>
+        <span class="text-2xl font-bold text-gray-700">{{ averageScorePercentage || 0 }}</span>
+      </div>
+    </div>
+
+    <!-- Card: Average Time to Complete -->
+    <div
+      class="bg-white shadow-sm rounded-lg p-4 flex items-center border-l-4 border-sky-500 hover:shadow-md transition-shadow duration-200"
+    >
+      <div class="bg-sky-100 p-3 rounded-full mr-4">
+        <i class="fas fa-stopwatch text-sky-600 text-lg"></i>
+      </div>
+      <div>
+        <p class="text-sm font-medium text-gray-500">
+          Average Time to Complete
+        </p>
+        <span class="text-2xl font-bold text-gray-700"
+          >{{ averageTimePercentage || 0 }}</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary card -->
+
+  <div
+    class="bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow duration-200 border border-gray-100"
+  >
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="text-xl font-semibold text-sky-700 flex items-center">
+        <i class="fas fa-clipboard-list text-sky-600 mr-2"></i>
+        {{ quiz.title }}
+      </h3>
+      <span
+        class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full"
+      >
+        {{ quiz.category }}
+      </span>
+    </div>
+
+    <p class="text-gray-600 mb-4 text-justify">{{ quiz.description }}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Left Column -->
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <i class="fas fa-question-circle text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Total Questions:
+            <span class="font-medium">{{ quiz.questions?.length }}</span></span
+          >
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-star text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Total Marks:
+            <span class="font-medium">{{ quiz.totalMarks }}</span></span
+          >
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-layer-group text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Category:
+            <span class="font-medium">{{ quiz.category }}</span></span
+          >
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-3">
+        <div class="flex items-center">
+          <i class="fas fa-user-tie text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Uploaded By:
+            <span class="font-medium">{{ quiz.uploadedBy }}</span></span
+          >
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-calendar-alt text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Created:
+            <span class="font-medium"
+              >{{ quiz.createdAt?.slice(0,10) }}</span
+            ></span
+          >
+        </div>
+
+        <div class="flex items-center">
+          <i class="fas fa-stopwatch text-gray-500 w-5 mr-2"></i>
+          <span class="text-sm text-gray-600"
+            >Time Limit:
+            <span class="font-medium">{{ quiz?.timeLimit}} mins</span></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="mt-5 pt-4 border-t border-gray-100 flex justify-between items-center">
+    <span class="text-xs text-gray-500">Last updated: {{ quiz.createdAt?.slice(0,10) }}</span>
+    <button class="text-sm font-medium text-sky-600 hover:text-sky-800 flex items-center">
+      View Details <i class="fas fa-chevron-right ml-1 text-xs"></i>
+    </button>
+  </div>
+</div> -->
+  </div>
+
+  <div
+    class="bg-white shadow-lg rounded-xl p-6 mt-6 hover:shadow-xl transition-all duration-300 border border-gray-200/50"
+  >
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-xl font-bold text-sky-800 flex items-center">
+        <i class="fas fa-question-circle text-sky-600 mr-3 text-xl"></i>
+        Questions ({{ quiz.questions?.length }})
+      </h3>
+      <span
+        class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
+      >
+        {{ quiz.totalMarks }} Marks Total
+      </span>
+    </div>
+
+    <div class="space-y-5">
+      <ng-container *ngFor="let question of quiz.questions; let i = index">
+        <div
+          class="p-5 bg-gradient-to-r from-sky-50/80 to-blue-50/80 rounded-xl hover:from-sky-100/80 hover:to-blue-100/80 transition-all duration-300 border border-sky-200/50 shadow-sm hover:shadow-md group"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex-1">
+              <div class="flex items-center mb-1">
+                <span
+                  class="bg-sky-600 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center mr-3"
+                >
+                  {{ i + 1 }}
+                </span>
+                <h4
+                  class="text-md font-semibold text-gray-800 group-hover:text-sky-700 transition-colors"
+                >
+                  {{ question.questionText }}
+                </h4>
+              </div>
+              <span
+                class="ml-9 text-xs font-medium text-sky-600 bg-sky-100 px-2 py-0.5 rounded-full"
+              >
+                {{ question.mark }} Marks
+              </span>
+            </div>
+            <button
+              (click)="editQuestion(quiz.id, question.id, i)"
+              class="text-sm text-sky-600 hover:text-sky-800 flex items-center transition-colors cursor-pointer"
+            >
+              <i class="fas fa-pen-to-square mr-1"></i> Edit
+            </button>
+          </div>
+
+          <!-- Edit Modal Overlay -->
+          <div
+            *ngIf="isEditing"
+            class="z-10 fixed inset-0 bg-opacity-50 flex items-center justify-center p-4 transition-opacity duration-300 bg-transparent backdrop-blur-sm"
+          >
+            <div
+              class="bg-white rounded-xl shadow-2xl max-w-2xl w-full border border-sky-200 transform transition-all duration-300 scale-95 animate-fadeIn"
+            >
+              <app-question-edit-popup
+                [questionform]="editQuestionForm"
+                (save)="onSaveEdit()"
+                (cancel)="isEditing = false"
+              ></app-question-edit-popup>
+            </div>
+          </div>
+
+          <ul class="ml-9 space-y-2.5">
+            <li
+              *ngFor="let option of question.options"
+              class="flex items-center py-1.5 px-3 rounded-lg transition-colors duration-200
+                    {{ option.isCorrect ? 'bg-green-50/80 border border-green-200' : 'bg-gray-50/50 hover:bg-gray-100' }}"
+            >
+              <span class="flex items-center mr-2">
+                <i
+                  class="fas {{ option.isCorrect ? 'fa-check-circle text-green-500' : 'fa-circle text-gray-400' }} text-sm mr-2"
+                ></i>
+              </span>
+              <span
+                class="text-gray-700 {{ option.isCorrect ? 'font-medium' : '' }}"
+              >
+                {{ option.optionText }}
+              </span>
+            </li>
+          </ul>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

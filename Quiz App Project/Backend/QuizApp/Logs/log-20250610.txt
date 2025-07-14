@@ -1,0 +1,1701 @@
+2025-06-10 14:15:49 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-10 14:15:49 [DBG] Hosting starting
+2025-06-10 14:15:49 [INF] User profile is available. Using '/Users/presidio/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-10 14:15:49 [DBG] Reading data from file '/Users/presidio/.aspnet/DataProtection-Keys/key-5be43c5a-9b56-4410-8158-fc1b19e14b87.xml'.
+2025-06-10 14:15:49 [DBG] Found key {5be43c5a-9b56-4410-8158-fc1b19e14b87}.
+2025-06-10 14:15:49 [DBG] Considering key {5be43c5a-9b56-4410-8158-fc1b19e14b87} with expiration date 2025-09-01 05:57:28Z as default key.
+2025-06-10 14:15:49 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-10 14:15:49 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-10 14:15:49 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-10 14:15:49 [DBG] Using key {5be43c5a-9b56-4410-8158-fc1b19e14b87} as the default key.
+2025-06-10 14:15:49 [DBG] Key ring with default key {5be43c5a-9b56-4410-8158-fc1b19e14b87} was loaded during application startup.
+2025-06-10 14:15:50 [INF] Now listening on: http://localhost:5038
+2025-06-10 14:15:50 [DBG] Loaded hosting startup assembly QuizApp
+2025-06-10 14:15:50 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-10 14:15:50 [INF] Hosting environment: Development
+2025-06-10 14:15:50 [INF] Content root path: /Users/presidio/Library/CloudStorage/OneDrive-PresidioNetworkSolutions/Documents/GensParkTraning/Project/QuizApp
+2025-06-10 14:15:50 [DBG] Hosting started
+2025-06-10 14:16:11 [DBG] Connection id "0HND7VD06DSQL" accepted.
+2025-06-10 14:16:11 [DBG] Connection id "0HND7VD06DSQL" started.
+2025-06-10 14:16:11 [INF] Request starting HTTP/1.1 GET http://localhost:5038/ - null null
+2025-06-10 14:16:11 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-10 14:16:11 [DBG] No candidates found for the request path '/'
+2025-06-10 14:16:11 [DBG] Request did not match any endpoints
+2025-06-10 14:16:11 [DBG] The request path  does not match the path filter
+2025-06-10 14:16:11 [WRN] Failed to determine the https port for redirect.
+2025-06-10 14:16:11 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-10 14:16:11 [DBG] Connection id "0HND7VD06DSQL" completed keep alive response.
+2025-06-10 14:16:11 [INF] Request finished HTTP/1.1 GET http://localhost:5038/ - 404 0 null 164.938ms
+2025-06-10 14:16:11 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5038/, Response status code: 404
+2025-06-10 14:16:12 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/index.html - null null
+2025-06-10 14:16:12 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-06-10 14:16:12 [DBG] Request did not match any endpoints
+2025-06-10 14:16:12 [DBG] Connection id "0HND7VD06DSQL" completed keep alive response.
+2025-06-10 14:16:12 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/index.html - 200 null text/html;charset=utf-8 169.2407ms
+2025-06-10 14:16:13 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - null null
+2025-06-10 14:16:13 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-10 14:16:13 [DBG] Request did not match any endpoints
+2025-06-10 14:16:13 [DBG] Connection id "0HND7VD06DSQL" completed keep alive response.
+2025-06-10 14:16:13 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.5116ms
+2025-06-10 14:16:36 [INF] Request starting HTTP/1.1 GET http://localhost:5038/api/v1/quizzes/QI19755F364084B73?id=QI19755F364084B73 - null null
+2025-06-10 14:16:36 [DBG] 1 candidate(s) found for the request path '/api/v1/quizzes/QI19755F364084B73'
+2025-06-10 14:16:36 [DBG] Endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)' with route pattern 'api/v{version:apiVersion}/quizzes/{id}' is valid for the request path '/api/v1/quizzes/QI19755F364084B73'
+2025-06-10 14:16:36 [DBG] Request matched endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:16:36 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-10 14:16:36 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-10 14:16:36 [INF] Executing endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:16:36 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-10 14:16:36 [INF] Route matched with {action = "GetQuizById", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuizById(System.String) on controller QuizApp.Controllers.v1.QuizController (QuizApp).
+2025-06-10 14:16:36 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-10 14:16:36 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-10 14:16:36 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","QuizApp.Misc.TransactionFilter","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 14:16:36 [DBG] Execution plan of exception filters (in the following order): ["QuizApp.Misc.CustomException (Order: 0)"]
+2025-06-10 14:16:36 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 14:16:36 [DBG] Executing controller factory for controller QuizApp.Controllers.v1.QuizController (QuizApp)
+2025-06-10 14:16:36 [DBG] Executed controller factory for controller QuizApp.Controllers.v1.QuizController (QuizApp)
+2025-06-10 14:16:36 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2025-06-10 14:16:36 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2025-06-10 14:16:36 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2025-06-10 14:16:36 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2025-06-10 14:16:36 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2025-06-10 14:16:36 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2025-06-10 14:16:37 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 14:16:37 [DBG] Creating DbConnection.
+2025-06-10 14:16:37 [DBG] Created DbConnection. (44ms).
+2025-06-10 14:16:37 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:16:37 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:16:37 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-06-10 14:16:37 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-06-10 14:16:37 [DBG] Compiling query expression: 
+'DbSet<Quiz>()
+    .Include(q => q.Questions)
+    .ThenInclude(q => q.Options)
+    .FirstOrDefault(q => q.Id == __key_0)'
+2025-06-10 14:16:37 [DBG] Including navigation: 'Quiz.Questions'.
+2025-06-10 14:16:37 [DBG] Including navigation: 'Question.Options'.
+2025-06-10 14:16:37 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-10 14:16:37 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Quiz>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Quiz>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            resultContext.Values == null ? 
+            {
+                Quiz entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext1;
+                    IEntityType entityType1;
+                    Quiz instance1;
+                    InternalEntityEntry entry1;
+                    bool hasNullKey1;
+                    materializationContext1 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance1 = default(Quiz);
+                    entry1 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: Quiz.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetString(0) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey1);
+                    !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                    {
+                        entityType1 = entry1.EntityType;
+                        return instance1 = (Quiz)entry1.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot1;
+                        shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType1 = [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")];
+                        instance1 = switch (entityType1)
+                        {
+                            case [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]: 
+                                {
+                                    return 
+                                    {
+                                        Quiz instance;
+                                        instance = new Quiz();
+                                        instance.<Id>k__BackingField = dataReader.GetString(0);
+                                        instance.<Category>k__BackingField = dataReader.GetString(1);
+                                        instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(2);
+                                        instance.<Title>k__BackingField = dataReader.GetString(3);
+                                        instance.<TotalMarks>k__BackingField = dataReader.GetInt32(4);
+                                        instance.<UploadedBy>k__BackingField = dataReader.GetString(5);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext1.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Quiz)
+                        }
+                        ;
+                        entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType1, 
+                            entity: instance1, 
+                            snapshot: shadowSnapshot1);
+                        return instance1;
+                    } : default(void);
+                    return instance1;
+                };
+                resultContext.Values = new object[]{ entity };
+                ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Quiz, Quiz>(
+                    collectionId: 0, 
+                    queryContext: queryContext, 
+                    dbDataReader: dataReader, 
+                    resultCoordinator: resultCoordinator, 
+                    entity: (Quiz)(resultContext.Values[0]), 
+                    parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    navigation: [LIFTABLE Constant: Navigation: Quiz.Questions (ICollection<Question>) Collection ToDependent Question Inverse: Quiz | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions")], 
+                    clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()], 
+                    trackingQuery: True, 
+                    setLoaded: True);
+            } : default(void);
+            ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Quiz, Question>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                {
+                    resultContext.Values == null ? 
+                    {
+                        Question entity;
+                        entity = 
+                        {
+                            MaterializationContext materializationContext2;
+                            IEntityType entityType2;
+                            Question instance2;
+                            InternalEntityEntry entry2;
+                            bool hasNullKey2;
+                            materializationContext2 = new MaterializationContext(
+                                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                queryContext.Context
+                            );
+                            instance2 = default(Question);
+                            entry2 = queryContext.TryGetEntry(
+                                key: [LIFTABLE Constant: Key: Question.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindPrimaryKey()], 
+                                keyValues: new object[]{ dataReader.IsDBNull(6) ? default(object) : (object)dataReader.GetString(6) }, 
+                                throwOnNullKey: False, 
+                                hasNullKey: hasNullKey2);
+                            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                            {
+                                entityType2 = entry2.EntityType;
+                                return instance2 = (Question)entry2.Entity;
+                            } : 
+                            {
+                                ISnapshot shadowSnapshot2;
+                                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                entityType2 = [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")];
+                                instance2 = switch (entityType2)
+                                {
+                                    case [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]: 
+                                        {
+                                            return 
+                                            {
+                                                Question instance;
+                                                instance = new Question();
+                                                instance.<Id>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                                instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime) : dataReader.GetDateTime(7);
+                                                instance.<Mark>k__BackingField = dataReader.IsDBNull(8) ? default(int) : dataReader.GetInt32(8);
+                                                instance.<QuestionText>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                                instance.<QuizId>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                    context: materializationContext2.Context, 
+                                                    entity: instance, 
+                                                    queryTrackingBehavior: TrackAll, 
+                                                    structuralType: [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]) : default(void);
+                                                return instance;
+                                            }}
+                                    default: 
+                                        default(Question)
+                                }
+                                ;
+                                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                    entityType: entityType2, 
+                                    entity: instance2, 
+                                    snapshot: shadowSnapshot2);
+                                return instance2;
+                            } : default(void);
+                            return instance2;
+                        };
+                        resultContext.Values = new object[]{ entity };
+                        ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Question, Question>(
+                            collectionId: 1, 
+                            queryContext: queryContext, 
+                            dbDataReader: dataReader, 
+                            resultCoordinator: resultCoordinator, 
+                            entity: (Question)(resultContext.Values[0]), 
+                            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            navigation: [LIFTABLE Constant: Navigation: Question.Options (ICollection<Option>) Collection ToDependent Option Inverse: question | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options")], 
+                            clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()], 
+                            trackingQuery: True, 
+                            setLoaded: True);
+                    } : default(void);
+                    ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Question, Option>(
+                        collectionId: 1, 
+                        queryContext: queryContext, 
+                        dbDataReader: dataReader, 
+                        resultCoordinator: resultCoordinator, 
+                        parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11) }], 
+                        parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                        {
+                            Option entity;
+                            entity = 
+                            {
+                                MaterializationContext materializationContext3;
+                                IEntityType entityType3;
+                                Option instance3;
+                                InternalEntityEntry entry3;
+                                bool hasNullKey3;
+                                materializationContext3 = new MaterializationContext(
+                                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                    queryContext.Context
+                                );
+                                instance3 = default(Option);
+                                entry3 = queryContext.TryGetEntry(
+                                    key: [LIFTABLE Constant: Key: Option.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindPrimaryKey()], 
+                                    keyValues: new object[]{ dataReader.IsDBNull(11) ? default(object) : (object)dataReader.GetString(11) }, 
+                                    throwOnNullKey: False, 
+                                    hasNullKey: hasNullKey3);
+                                !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                                {
+                                    entityType3 = entry3.EntityType;
+                                    return instance3 = (Option)entry3.Entity;
+                                } : 
+                                {
+                                    ISnapshot shadowSnapshot3;
+                                    shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                    entityType3 = [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")];
+                                    instance3 = switch (entityType3)
+                                    {
+                                        case [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]: 
+                                            {
+                                                return 
+                                                {
+                                                    Option instance;
+                                                    instance = new Option();
+                                                    instance.<Id>k__BackingField = dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11);
+                                                    instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime) : dataReader.GetDateTime(12);
+                                                    instance.<IsCorrect>k__BackingField = dataReader.IsDBNull(13) ? default(bool) : dataReader.GetBoolean(13);
+                                                    instance.<OptionText>k__BackingField = dataReader.IsDBNull(14) ? default(string) : dataReader.GetString(14);
+                                                    instance.<QuestionId>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                        context: materializationContext3.Context, 
+                                                        entity: instance, 
+                                                        queryTrackingBehavior: TrackAll, 
+                                                        structuralType: [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]) : default(void);
+                                                    return instance;
+                                                }}
+                                        default: 
+                                            default(Option)
+                                    }
+                                    ;
+                                    entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                        entityType: entityType3, 
+                                        entity: instance3, 
+                                        snapshot: shadowSnapshot3);
+                                    return instance3;
+                                } : default(void);
+                                return instance3;
+                            };
+                            return entity;
+                        }, 
+                        inverseNavigation: [LIFTABLE Constant: Navigation: Option.question (Question) ToPrincipal Question Inverse: Options | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindNavigation("question")], 
+                        fixup: (namelessParameter{14}, namelessParameter{15}) => 
+                        {
+                            [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()].Add(
+                                entity: namelessParameter{14}, 
+                                value: namelessParameter{15}, 
+                                forMaterialization: True);
+                            return namelessParameter{15}.<question>k__BackingField = namelessParameter{14};
+                        }, 
+                        trackingQuery: True);
+                    return IsTrue(resultCoordinator.ResultReady)
+                     ? (Question)(resultContext.Values[0]) : default(Question);
+                }, 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Question.Quiz (Quiz) ToPrincipal Quiz Inverse: Questions | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Quiz")], 
+                fixup: (namelessParameter{18}, namelessParameter{19}) => 
+                {
+                    [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{18}, 
+                        value: namelessParameter{19}, 
+                        forMaterialization: True);
+                    return namelessParameter{19}.<Quiz>k__BackingField = namelessParameter{18};
+                }, 
+                trackingQuery: True);
+            return IsTrue(resultCoordinator.ResultReady)
+             ? (Quiz)(resultContext.Values[0]) : default(Quiz);
+        }, 
+        contextType: QuizApp.Contexts.QuizAppContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-10 14:16:38 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 14:16:38 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-06-10 14:16:38 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2025-06-10 14:16:38 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 14:16:38 [INF] Executed DbCommand (77ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Quiz' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:16:38 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:16:38 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 159ms reading results.
+2025-06-10 14:16:38 [DBG] Committing transaction.
+2025-06-10 14:16:38 [DBG] Committed transaction.
+2025-06-10 14:16:38 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:16:38 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (4ms).
+2025-06-10 14:16:38 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-10 14:16:38 [DBG] No information found on request to perform content negotiation.
+2025-06-10 14:16:38 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-10 14:16:38 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-10 14:16:38 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-10 14:16:38 [INF] Executing OkObjectResult, writing value of type 'QuizApp.Models.Quiz'.
+2025-06-10 14:16:38 [INF] Executed action QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp) in 1994.7978ms
+2025-06-10 14:16:38 [INF] Executed endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:16:38 [DBG] Connection id "0HND7VD06DSQL" completed keep alive response.
+2025-06-10 14:16:38 [DBG] 'QuizAppContext' disposed.
+2025-06-10 14:16:38 [DBG] Disposing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:16:38 [DBG] Disposed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (2ms).
+2025-06-10 14:16:38 [INF] Request finished HTTP/1.1 GET http://localhost:5038/api/v1/quizzes/QI19755F364084B73?id=QI19755F364084B73 - 200 null application/json; charset=utf-8 2309.3616ms
+2025-06-10 14:17:07 [DBG] Connection id "0HND7VD06DSQL" received FIN.
+2025-06-10 14:17:07 [DBG] Connection id "0HND7VD06DSQL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-10 14:17:07 [DBG] Connection id "0HND7VD06DSQL" disconnecting.
+2025-06-10 14:17:07 [DBG] Connection id "0HND7VD06DSQL" stopped.
+2025-06-10 14:18:49 [INF] Application is shutting down...
+2025-06-10 14:18:49 [DBG] Hosting stopping
+2025-06-10 14:18:49 [DBG] Hosting stopped
+2025-06-10 14:19:02 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-10 14:19:02 [DBG] Hosting starting
+2025-06-10 14:19:02 [INF] User profile is available. Using '/Users/presidio/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-10 14:19:02 [DBG] Reading data from file '/Users/presidio/.aspnet/DataProtection-Keys/key-5be43c5a-9b56-4410-8158-fc1b19e14b87.xml'.
+2025-06-10 14:19:02 [DBG] Found key {5be43c5a-9b56-4410-8158-fc1b19e14b87}.
+2025-06-10 14:19:02 [DBG] Considering key {5be43c5a-9b56-4410-8158-fc1b19e14b87} with expiration date 2025-09-01 05:57:28Z as default key.
+2025-06-10 14:19:02 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-10 14:19:02 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-10 14:19:02 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-10 14:19:02 [DBG] Using key {5be43c5a-9b56-4410-8158-fc1b19e14b87} as the default key.
+2025-06-10 14:19:02 [DBG] Key ring with default key {5be43c5a-9b56-4410-8158-fc1b19e14b87} was loaded during application startup.
+2025-06-10 14:19:02 [INF] Now listening on: http://localhost:5038
+2025-06-10 14:19:02 [DBG] Loaded hosting startup assembly QuizApp
+2025-06-10 14:19:02 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-10 14:19:02 [INF] Hosting environment: Development
+2025-06-10 14:19:02 [INF] Content root path: /Users/presidio/Library/CloudStorage/OneDrive-PresidioNetworkSolutions/Documents/GensParkTraning/Project/QuizApp
+2025-06-10 14:19:02 [DBG] Hosting started
+2025-06-10 14:19:09 [DBG] Connection id "0HND7VEL8OBRB" accepted.
+2025-06-10 14:19:09 [DBG] Connection id "0HND7VEL8OBRB" started.
+2025-06-10 14:19:09 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/index.html - null null
+2025-06-10 14:19:09 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-10 14:19:09 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-06-10 14:19:09 [DBG] Request did not match any endpoints
+2025-06-10 14:19:09 [DBG] Connection id "0HND7VEL8OBRB" completed keep alive response.
+2025-06-10 14:19:09 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/index.html - 200 null text/html;charset=utf-8 173.8235ms
+2025-06-10 14:19:09 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - null null
+2025-06-10 14:19:09 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-10 14:19:09 [DBG] Request did not match any endpoints
+2025-06-10 14:19:10 [DBG] Connection id "0HND7VEL8OBRB" completed keep alive response.
+2025-06-10 14:19:10 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.0865ms
+2025-06-10 14:19:20 [INF] Request starting HTTP/1.1 GET http://localhost:5038/api/v1/quizzes?id=QI19755F364084B73 - null null
+2025-06-10 14:19:20 [DBG] 1 candidate(s) found for the request path '/api/v1/quizzes'
+2025-06-10 14:19:20 [DBG] Endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)' with route pattern 'api/v{version:apiVersion}/quizzes' is valid for the request path '/api/v1/quizzes'
+2025-06-10 14:19:20 [DBG] Request matched endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:19:20 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-10 14:19:20 [WRN] Failed to determine the https port for redirect.
+2025-06-10 14:19:20 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-10 14:19:20 [INF] Executing endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:19:20 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-10 14:19:20 [INF] Route matched with {action = "GetQuizById", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQuizById(System.String) on controller QuizApp.Controllers.v1.QuizController (QuizApp).
+2025-06-10 14:19:20 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-10 14:19:20 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-10 14:19:20 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","QuizApp.Misc.TransactionFilter","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 14:19:20 [DBG] Execution plan of exception filters (in the following order): ["QuizApp.Misc.CustomException (Order: 0)"]
+2025-06-10 14:19:20 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 14:19:20 [DBG] Executing controller factory for controller QuizApp.Controllers.v1.QuizController (QuizApp)
+2025-06-10 14:19:20 [DBG] Executed controller factory for controller QuizApp.Controllers.v1.QuizController (QuizApp)
+2025-06-10 14:19:20 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2025-06-10 14:19:20 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2025-06-10 14:19:20 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2025-06-10 14:19:20 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2025-06-10 14:19:20 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2025-06-10 14:19:20 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2025-06-10 14:19:21 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 14:19:21 [DBG] Creating DbConnection.
+2025-06-10 14:19:21 [DBG] Created DbConnection. (35ms).
+2025-06-10 14:19:21 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:19:21 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:19:21 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-06-10 14:19:21 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-06-10 14:19:21 [DBG] Compiling query expression: 
+'DbSet<Quiz>()
+    .Include(q => q.Questions)
+    .ThenInclude(q => q.Options)
+    .FirstOrDefault(q => q.Id == __key_0)'
+2025-06-10 14:19:21 [DBG] Including navigation: 'Quiz.Questions'.
+2025-06-10 14:19:21 [DBG] Including navigation: 'Question.Options'.
+2025-06-10 14:19:21 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-10 14:19:22 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Quiz>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Quiz>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            resultContext.Values == null ? 
+            {
+                Quiz entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext1;
+                    IEntityType entityType1;
+                    Quiz instance1;
+                    InternalEntityEntry entry1;
+                    bool hasNullKey1;
+                    materializationContext1 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance1 = default(Quiz);
+                    entry1 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: Quiz.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetString(0) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey1);
+                    !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                    {
+                        entityType1 = entry1.EntityType;
+                        return instance1 = (Quiz)entry1.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot1;
+                        shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType1 = [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")];
+                        instance1 = switch (entityType1)
+                        {
+                            case [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]: 
+                                {
+                                    return 
+                                    {
+                                        Quiz instance;
+                                        instance = new Quiz();
+                                        instance.<Id>k__BackingField = dataReader.GetString(0);
+                                        instance.<Category>k__BackingField = dataReader.GetString(1);
+                                        instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(2);
+                                        instance.<Title>k__BackingField = dataReader.GetString(3);
+                                        instance.<TotalMarks>k__BackingField = dataReader.GetInt32(4);
+                                        instance.<UploadedBy>k__BackingField = dataReader.GetString(5);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext1.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Quiz)
+                        }
+                        ;
+                        entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType1, 
+                            entity: instance1, 
+                            snapshot: shadowSnapshot1);
+                        return instance1;
+                    } : default(void);
+                    return instance1;
+                };
+                resultContext.Values = new object[]{ entity };
+                ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Quiz, Quiz>(
+                    collectionId: 0, 
+                    queryContext: queryContext, 
+                    dbDataReader: dataReader, 
+                    resultCoordinator: resultCoordinator, 
+                    entity: (Quiz)(resultContext.Values[0]), 
+                    parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    navigation: [LIFTABLE Constant: Navigation: Quiz.Questions (ICollection<Question>) Collection ToDependent Question Inverse: Quiz | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions")], 
+                    clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()], 
+                    trackingQuery: True, 
+                    setLoaded: True);
+            } : default(void);
+            ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Quiz, Question>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                {
+                    resultContext.Values == null ? 
+                    {
+                        Question entity;
+                        entity = 
+                        {
+                            MaterializationContext materializationContext2;
+                            IEntityType entityType2;
+                            Question instance2;
+                            InternalEntityEntry entry2;
+                            bool hasNullKey2;
+                            materializationContext2 = new MaterializationContext(
+                                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                queryContext.Context
+                            );
+                            instance2 = default(Question);
+                            entry2 = queryContext.TryGetEntry(
+                                key: [LIFTABLE Constant: Key: Question.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindPrimaryKey()], 
+                                keyValues: new object[]{ dataReader.IsDBNull(6) ? default(object) : (object)dataReader.GetString(6) }, 
+                                throwOnNullKey: False, 
+                                hasNullKey: hasNullKey2);
+                            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                            {
+                                entityType2 = entry2.EntityType;
+                                return instance2 = (Question)entry2.Entity;
+                            } : 
+                            {
+                                ISnapshot shadowSnapshot2;
+                                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                entityType2 = [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")];
+                                instance2 = switch (entityType2)
+                                {
+                                    case [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]: 
+                                        {
+                                            return 
+                                            {
+                                                Question instance;
+                                                instance = new Question();
+                                                instance.<Id>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                                instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime) : dataReader.GetDateTime(7);
+                                                instance.<Mark>k__BackingField = dataReader.IsDBNull(8) ? default(int) : dataReader.GetInt32(8);
+                                                instance.<QuestionText>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                                instance.<QuizId>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                    context: materializationContext2.Context, 
+                                                    entity: instance, 
+                                                    queryTrackingBehavior: TrackAll, 
+                                                    structuralType: [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]) : default(void);
+                                                return instance;
+                                            }}
+                                    default: 
+                                        default(Question)
+                                }
+                                ;
+                                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                    entityType: entityType2, 
+                                    entity: instance2, 
+                                    snapshot: shadowSnapshot2);
+                                return instance2;
+                            } : default(void);
+                            return instance2;
+                        };
+                        resultContext.Values = new object[]{ entity };
+                        ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Question, Question>(
+                            collectionId: 1, 
+                            queryContext: queryContext, 
+                            dbDataReader: dataReader, 
+                            resultCoordinator: resultCoordinator, 
+                            entity: (Question)(resultContext.Values[0]), 
+                            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            navigation: [LIFTABLE Constant: Navigation: Question.Options (ICollection<Option>) Collection ToDependent Option Inverse: question | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options")], 
+                            clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()], 
+                            trackingQuery: True, 
+                            setLoaded: True);
+                    } : default(void);
+                    ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Question, Option>(
+                        collectionId: 1, 
+                        queryContext: queryContext, 
+                        dbDataReader: dataReader, 
+                        resultCoordinator: resultCoordinator, 
+                        parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11) }], 
+                        parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                        {
+                            Option entity;
+                            entity = 
+                            {
+                                MaterializationContext materializationContext3;
+                                IEntityType entityType3;
+                                Option instance3;
+                                InternalEntityEntry entry3;
+                                bool hasNullKey3;
+                                materializationContext3 = new MaterializationContext(
+                                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                    queryContext.Context
+                                );
+                                instance3 = default(Option);
+                                entry3 = queryContext.TryGetEntry(
+                                    key: [LIFTABLE Constant: Key: Option.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindPrimaryKey()], 
+                                    keyValues: new object[]{ dataReader.IsDBNull(11) ? default(object) : (object)dataReader.GetString(11) }, 
+                                    throwOnNullKey: False, 
+                                    hasNullKey: hasNullKey3);
+                                !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                                {
+                                    entityType3 = entry3.EntityType;
+                                    return instance3 = (Option)entry3.Entity;
+                                } : 
+                                {
+                                    ISnapshot shadowSnapshot3;
+                                    shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                    entityType3 = [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")];
+                                    instance3 = switch (entityType3)
+                                    {
+                                        case [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]: 
+                                            {
+                                                return 
+                                                {
+                                                    Option instance;
+                                                    instance = new Option();
+                                                    instance.<Id>k__BackingField = dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11);
+                                                    instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime) : dataReader.GetDateTime(12);
+                                                    instance.<IsCorrect>k__BackingField = dataReader.IsDBNull(13) ? default(bool) : dataReader.GetBoolean(13);
+                                                    instance.<OptionText>k__BackingField = dataReader.IsDBNull(14) ? default(string) : dataReader.GetString(14);
+                                                    instance.<QuestionId>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                        context: materializationContext3.Context, 
+                                                        entity: instance, 
+                                                        queryTrackingBehavior: TrackAll, 
+                                                        structuralType: [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]) : default(void);
+                                                    return instance;
+                                                }}
+                                        default: 
+                                            default(Option)
+                                    }
+                                    ;
+                                    entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                        entityType: entityType3, 
+                                        entity: instance3, 
+                                        snapshot: shadowSnapshot3);
+                                    return instance3;
+                                } : default(void);
+                                return instance3;
+                            };
+                            return entity;
+                        }, 
+                        inverseNavigation: [LIFTABLE Constant: Navigation: Option.question (Question) ToPrincipal Question Inverse: Options | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindNavigation("question")], 
+                        fixup: (namelessParameter{14}, namelessParameter{15}) => 
+                        {
+                            [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()].Add(
+                                entity: namelessParameter{14}, 
+                                value: namelessParameter{15}, 
+                                forMaterialization: True);
+                            return namelessParameter{15}.<question>k__BackingField = namelessParameter{14};
+                        }, 
+                        trackingQuery: True);
+                    return IsTrue(resultCoordinator.ResultReady)
+                     ? (Question)(resultContext.Values[0]) : default(Question);
+                }, 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Question.Quiz (Quiz) ToPrincipal Quiz Inverse: Questions | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Quiz")], 
+                fixup: (namelessParameter{18}, namelessParameter{19}) => 
+                {
+                    [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{18}, 
+                        value: namelessParameter{19}, 
+                        forMaterialization: True);
+                    return namelessParameter{19}.<Quiz>k__BackingField = namelessParameter{18};
+                }, 
+                trackingQuery: True);
+            return IsTrue(resultCoordinator.ResultReady)
+             ? (Quiz)(resultContext.Values[0]) : default(Quiz);
+        }, 
+        contextType: QuizApp.Contexts.QuizAppContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-10 14:19:22 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 14:19:22 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-06-10 14:19:22 [DBG] Initialized DbCommand for 'ExecuteReader' (18ms).
+2025-06-10 14:19:22 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 14:19:22 [INF] Executed DbCommand (92ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Quiz' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 14:19:22 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:19:22 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 162ms reading results.
+2025-06-10 14:19:22 [DBG] Committing transaction.
+2025-06-10 14:19:22 [DBG] Committed transaction.
+2025-06-10 14:19:22 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:19:22 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (3ms).
+2025-06-10 14:19:22 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-10 14:19:22 [DBG] No information found on request to perform content negotiation.
+2025-06-10 14:19:22 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-10 14:19:22 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-10 14:19:22 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-10 14:19:22 [INF] Executing OkObjectResult, writing value of type 'QuizApp.Models.Quiz'.
+2025-06-10 14:19:22 [INF] Executed action QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp) in 1910.2633ms
+2025-06-10 14:19:22 [INF] Executed endpoint 'QuizApp.Controllers.v1.QuizController.GetQuizById (QuizApp)'
+2025-06-10 14:19:22 [DBG] Connection id "0HND7VEL8OBRB" completed keep alive response.
+2025-06-10 14:19:22 [DBG] 'QuizAppContext' disposed.
+2025-06-10 14:19:22 [DBG] Disposing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 14:19:22 [DBG] Disposed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (4ms).
+2025-06-10 14:19:22 [INF] Request finished HTTP/1.1 GET http://localhost:5038/api/v1/quizzes?id=QI19755F364084B73 - 200 null application/json; charset=utf-8 2137.4084ms
+2025-06-10 14:19:51 [DBG] Connection id "0HND7VEL8OBRB" received FIN.
+2025-06-10 14:19:51 [DBG] Connection id "0HND7VEL8OBRB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-10 14:19:51 [DBG] Connection id "0HND7VEL8OBRB" disconnecting.
+2025-06-10 14:19:51 [DBG] Connection id "0HND7VEL8OBRB" stopped.
+2025-06-10 16:33:32 [INF] Application is shutting down...
+2025-06-10 16:33:32 [DBG] Hosting stopping
+2025-06-10 16:33:32 [DBG] Hosting stopped
+2025-06-10 16:36:06 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-10 16:36:07 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 16:36:08 [DBG] 'QuizAppContext' disposed.
+2025-06-10 16:36:48 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-10 16:36:49 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 16:36:49 [DBG] Creating DbConnection.
+2025-06-10 16:36:49 [DBG] Created DbConnection. (43ms).
+2025-06-10 16:36:49 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 16:36:49 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-06-10 16:36:49 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2025-06-10 16:36:49 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-10 16:36:49 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-10 16:36:49 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 51ms reading results.
+2025-06-10 16:36:49 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (6ms).
+2025-06-10 16:36:49 [DBG] Migrating using database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (5ms).
+2025-06-10 16:36:49 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:49 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-06-10 16:36:50 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-06-10 16:36:50 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-06-10 16:36:50 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-06-10 16:36:50 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-06-10 16:36:50 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-10 16:36:50 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-10 16:36:50 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:50 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-06-10 16:36:50 [INF] Applying migration '20250610110608_ColumnUpdates'.
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" DROP CONSTRAINT "FK_CompletedQuiz_Student";
+2025-06-10 16:36:50 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" DROP CONSTRAINT "FK_CompletedQuiz_Student";
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Students_Email";
+2025-06-10 16:36:50 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Students_Email";
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" RENAME COLUMN "StudentId" TO "StudentEmail";
+2025-06-10 16:36:50 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" RENAME COLUMN "StudentId" TO "StudentEmail";
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER INDEX "IX_CompletedQuizzes_StudentId" RENAME TO "IX_CompletedQuizzes_StudentEmail";
+2025-06-10 16:36:50 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER INDEX "IX_CompletedQuizzes_StudentId" RENAME TO "IX_CompletedQuizzes_StudentEmail";
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" ADD "QuizId" text NOT NULL DEFAULT '';
+2025-06-10 16:36:50 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" ADD "QuizId" text NOT NULL DEFAULT '';
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Students" ADD CONSTRAINT "AK_Students_Email" UNIQUE ("Email");
+2025-06-10 16:36:50 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Students" ADD CONSTRAINT "AK_Students_Email" UNIQUE ("Email");
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" ADD CONSTRAINT "FK_CompletedQuiz_Student" FOREIGN KEY ("StudentEmail") REFERENCES "Students" ("Email") ON DELETE CASCADE;
+2025-06-10 16:36:50 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "CompletedQuizzes" ADD CONSTRAINT "FK_CompletedQuiz_Student" FOREIGN KEY ("StudentEmail") REFERENCES "Students" ("Email") ON DELETE CASCADE;
+2025-06-10 16:36:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-06-10 16:36:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-06-10 16:36:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250610110608_ColumnUpdates', '9.0.5');
+2025-06-10 16:36:50 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250610110608_ColumnUpdates', '9.0.5');
+2025-06-10 16:36:50 [DBG] Committing transaction.
+2025-06-10 16:36:50 [DBG] Committed transaction.
+2025-06-10 16:36:50 [DBG] Disposing transaction.
+2025-06-10 16:36:50 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:50 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (0ms).
+2025-06-10 16:36:50 [DBG] 'QuizAppContext' disposed.
+2025-06-10 16:36:50 [DBG] Disposing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:36:50 [DBG] Disposed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (0ms).
+2025-06-10 16:36:58 [DBG] Registered model binder providers, in the following order: ["Asp.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-10 16:36:58 [DBG] Hosting starting
+2025-06-10 16:36:58 [INF] User profile is available. Using '/Users/presidio/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-10 16:36:58 [DBG] Reading data from file '/Users/presidio/.aspnet/DataProtection-Keys/key-5be43c5a-9b56-4410-8158-fc1b19e14b87.xml'.
+2025-06-10 16:36:58 [DBG] Found key {5be43c5a-9b56-4410-8158-fc1b19e14b87}.
+2025-06-10 16:36:58 [DBG] Considering key {5be43c5a-9b56-4410-8158-fc1b19e14b87} with expiration date 2025-09-01 05:57:28Z as default key.
+2025-06-10 16:36:58 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-06-10 16:36:58 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-06-10 16:36:58 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-06-10 16:36:58 [DBG] Using key {5be43c5a-9b56-4410-8158-fc1b19e14b87} as the default key.
+2025-06-10 16:36:58 [DBG] Key ring with default key {5be43c5a-9b56-4410-8158-fc1b19e14b87} was loaded during application startup.
+2025-06-10 16:36:58 [INF] Now listening on: http://localhost:5038
+2025-06-10 16:36:58 [DBG] Loaded hosting startup assembly QuizApp
+2025-06-10 16:36:58 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-10 16:36:58 [INF] Hosting environment: Development
+2025-06-10 16:36:58 [INF] Content root path: /Users/presidio/Library/CloudStorage/OneDrive-PresidioNetworkSolutions/Documents/GensParkTraning/Project/QuizApp
+2025-06-10 16:36:58 [DBG] Hosting started
+2025-06-10 16:37:04 [DBG] Connection id "0HND81RNEUGT1" accepted.
+2025-06-10 16:37:04 [DBG] Connection id "0HND81RNEUGT1" started.
+2025-06-10 16:37:04 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/index.html - null null
+2025-06-10 16:37:04 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-10 16:37:04 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-06-10 16:37:04 [DBG] Request did not match any endpoints
+2025-06-10 16:37:05 [DBG] Connection id "0HND81RNEUGT1" completed keep alive response.
+2025-06-10 16:37:05 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/index.html - 200 null text/html;charset=utf-8 184.1799ms
+2025-06-10 16:37:05 [INF] Request starting HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - null null
+2025-06-10 16:37:05 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-10 16:37:05 [DBG] Request did not match any endpoints
+2025-06-10 16:37:05 [DBG] Connection id "0HND81RNEUGT1" completed keep alive response.
+2025-06-10 16:37:05 [INF] Request finished HTTP/1.1 GET http://localhost:5038/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 189.2565ms
+2025-06-10 16:37:34 [DBG] Connection id "0HND81RNEUGT1" reset.
+2025-06-10 16:37:34 [DBG] Connection id "0HND81RNEUGT1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-10 16:37:34 [DBG] Connection id "0HND81RNEUGT1" disconnecting.
+2025-06-10 16:37:34 [DBG] Connection id "0HND81RNEUGT1" stopped.
+2025-06-10 16:37:52 [DBG] Connection id "0HND81RNEUGT2" accepted.
+2025-06-10 16:37:52 [DBG] Connection id "0HND81RNEUGT2" started.
+2025-06-10 16:37:52 [INF] Request starting HTTP/1.1 POST http://localhost:5038/api/v1/attempt-quiz/submit - application/json 695
+2025-06-10 16:37:52 [DBG] 1 candidate(s) found for the request path '/api/v1/attempt-quiz/submit'
+2025-06-10 16:37:52 [DBG] Endpoint 'QuizApp.Controllers.v1.AttemptQuizController.SubmitQuiz (QuizApp)' with route pattern 'api/v{version:apiVersion}/attempt-quiz/submit' is valid for the request path '/api/v1/attempt-quiz/submit'
+2025-06-10 16:37:52 [DBG] Request matched endpoint 'QuizApp.Controllers.v1.AttemptQuizController.SubmitQuiz (QuizApp)'
+2025-06-10 16:37:52 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-10 16:37:52 [WRN] Failed to determine the https port for redirect.
+2025-06-10 16:37:52 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-10 16:37:52 [DBG] The request has an origin header: 'http://localhost:5038'.
+2025-06-10 16:37:52 [INF] CORS policy execution successful.
+2025-06-10 16:37:52 [INF] Executing endpoint 'QuizApp.Controllers.v1.AttemptQuizController.SubmitQuiz (QuizApp)'
+2025-06-10 16:37:52 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-10 16:37:52 [INF] Route matched with {action = "SubmitQuiz", controller = "AttemptQuiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubmitQuiz(QuizApp.DTOs.SubmitQuizRequestDTO) on controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp).
+2025-06-10 16:37:52 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-10 16:37:52 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-10 16:37:52 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","QuizApp.Misc.TransactionFilter","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 16:37:52 [DBG] Execution plan of exception filters (in the following order): ["QuizApp.Misc.CustomException (Order: 0)"]
+2025-06-10 16:37:52 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 16:37:52 [DBG] Executing controller factory for controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp)
+2025-06-10 16:37:52 [DBG] Executed controller factory for controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp)
+2025-06-10 16:37:52 [DBG] Attempting to bind parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO' ...
+2025-06-10 16:37:52 [DBG] Attempting to bind parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO' using the name '' in request data ...
+2025-06-10 16:37:52 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-06-10 16:37:52 [DBG] Connection id "0HND81RNEUGT2", Request id "0HND81RNEUGT2:00000001": started reading request body.
+2025-06-10 16:37:52 [DBG] Connection id "0HND81RNEUGT2", Request id "0HND81RNEUGT2:00000001": done reading request body.
+2025-06-10 16:37:52 [DBG] JSON input formatter succeeded, deserializing to type 'QuizApp.DTOs.SubmitQuizRequestDTO'
+2025-06-10 16:37:52 [DBG] Done attempting to bind parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO'.
+2025-06-10 16:37:52 [DBG] Done attempting to bind parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO'.
+2025-06-10 16:37:52 [DBG] Attempting to validate the bound parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO' ...
+2025-06-10 16:37:52 [DBG] Done attempting to validate the bound parameter 'request' of type 'QuizApp.DTOs.SubmitQuizRequestDTO'.
+2025-06-10 16:37:53 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 16:37:53 [DBG] Creating DbConnection.
+2025-06-10 16:37:53 [DBG] Created DbConnection. (50ms).
+2025-06-10 16:37:53 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:37:53 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:37:53 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-06-10 16:37:53 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-06-10 16:37:53 [DBG] Compiling query expression: 
+'DbSet<Quiz>()
+    .Include(q => q.Questions)
+    .ThenInclude(q => q.Options)
+    .FirstOrDefault(q => q.Id == __key_0)'
+2025-06-10 16:37:53 [DBG] Including navigation: 'Quiz.Questions'.
+2025-06-10 16:37:54 [DBG] Including navigation: 'Question.Options'.
+2025-06-10 16:37:54 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-10 16:37:54 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Quiz>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Quiz>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Quiz.Id (string) Required PK AfterSave:Throw, 0], [Property: Quiz.Category (string) Required, 1], [Property: Quiz.CreatedAt (DateTime) Required, 2], [Property: Quiz.Title (string) Required, 3], [Property: Quiz.TotalMarks (int) Required, 4], [Property: Quiz.UploadedBy (string) Required FK Index, 5] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Question.Id (string) Required PK AfterSave:Throw, 6], [Property: Question.CreatedAt (DateTime) Required, 7], [Property: Question.Mark (int) Required, 8], [Property: Question.QuestionText (string) Required, 9], [Property: Question.QuizId (string) Required FK Index, 10] }
+                3 -> 6
+                4 -> Dictionary<IProperty, int> { [Property: Option.Id (string) Required PK AfterSave:Throw, 11], [Property: Option.CreatedAt (DateTime) Required, 12], [Property: Option.IsCorrect (bool) Required, 13], [Property: Option.OptionText (string) Required, 14], [Property: Option.QuestionId (string) Required FK Index, 15] }
+                5 -> 11
+            SELECT q1.Id, q1.Category, q1.CreatedAt, q1.Title, q1.TotalMarks, q1.UploadedBy, s.Id, s.CreatedAt, s.Mark, s.QuestionText, s.QuizId, s.Id0, s.CreatedAt0, s.IsCorrect, s.OptionText, s.QuestionId
+            FROM 
+            (
+                SELECT TOP(1) q.Id, q.Category, q.CreatedAt, q.Title, q.TotalMarks, q.UploadedBy
+                FROM Quizzes AS q
+                WHERE q.Id == @__key_0
+            ) AS q1
+            LEFT JOIN 
+            (
+                SELECT q0.Id, q0.CreatedAt, q0.Mark, q0.QuestionText, q0.QuizId, o.Id AS Id0, o.CreatedAt AS CreatedAt0, o.IsCorrect, o.OptionText, o.QuestionId
+                FROM Questions AS q0
+                LEFT JOIN Options AS o ON q0.Id == o.QuestionId
+            ) AS s ON q1.Id == s.QuizId
+            ORDER BY q1.Id ASC, s.Id ASC, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            resultContext.Values == null ? 
+            {
+                Quiz entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext1;
+                    IEntityType entityType1;
+                    Quiz instance1;
+                    InternalEntityEntry entry1;
+                    bool hasNullKey1;
+                    materializationContext1 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance1 = default(Quiz);
+                    entry1 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: Quiz.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetString(0) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey1);
+                    !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                    {
+                        entityType1 = entry1.EntityType;
+                        return instance1 = (Quiz)entry1.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot1;
+                        shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType1 = [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")];
+                        instance1 = switch (entityType1)
+                        {
+                            case [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]: 
+                                {
+                                    return 
+                                    {
+                                        Quiz instance;
+                                        instance = new Quiz();
+                                        instance.<Id>k__BackingField = dataReader.GetString(0);
+                                        instance.<Category>k__BackingField = dataReader.GetString(1);
+                                        instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(2);
+                                        instance.<Title>k__BackingField = dataReader.GetString(3);
+                                        instance.<TotalMarks>k__BackingField = dataReader.GetInt32(4);
+                                        instance.<UploadedBy>k__BackingField = dataReader.GetString(5);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext1.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: Quiz | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Quiz)
+                        }
+                        ;
+                        entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType1, 
+                            entity: instance1, 
+                            snapshot: shadowSnapshot1);
+                        return instance1;
+                    } : default(void);
+                    return instance1;
+                };
+                resultContext.Values = new object[]{ entity };
+                ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Quiz, Quiz>(
+                    collectionId: 0, 
+                    queryContext: queryContext, 
+                    dbDataReader: dataReader, 
+                    resultCoordinator: resultCoordinator, 
+                    entity: (Quiz)(resultContext.Values[0]), 
+                    parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                    navigation: [LIFTABLE Constant: Navigation: Quiz.Questions (ICollection<Question>) Collection ToDependent Question Inverse: Quiz | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions")], 
+                    clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()], 
+                    trackingQuery: True, 
+                    setLoaded: True);
+            } : default(void);
+            ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Quiz, Question>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.GetString(0) }], 
+                selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                {
+                    resultContext.Values == null ? 
+                    {
+                        Question entity;
+                        entity = 
+                        {
+                            MaterializationContext materializationContext2;
+                            IEntityType entityType2;
+                            Question instance2;
+                            InternalEntityEntry entry2;
+                            bool hasNullKey2;
+                            materializationContext2 = new MaterializationContext(
+                                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                queryContext.Context
+                            );
+                            instance2 = default(Question);
+                            entry2 = queryContext.TryGetEntry(
+                                key: [LIFTABLE Constant: Key: Question.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindPrimaryKey()], 
+                                keyValues: new object[]{ dataReader.IsDBNull(6) ? default(object) : (object)dataReader.GetString(6) }, 
+                                throwOnNullKey: False, 
+                                hasNullKey: hasNullKey2);
+                            !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                            {
+                                entityType2 = entry2.EntityType;
+                                return instance2 = (Question)entry2.Entity;
+                            } : 
+                            {
+                                ISnapshot shadowSnapshot2;
+                                shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                entityType2 = [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")];
+                                instance2 = switch (entityType2)
+                                {
+                                    case [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]: 
+                                        {
+                                            return 
+                                            {
+                                                Question instance;
+                                                instance = new Question();
+                                                instance.<Id>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                                instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(7) ? default(DateTime) : dataReader.GetDateTime(7);
+                                                instance.<Mark>k__BackingField = dataReader.IsDBNull(8) ? default(int) : dataReader.GetInt32(8);
+                                                instance.<QuestionText>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                                instance.<QuizId>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                    context: materializationContext2.Context, 
+                                                    entity: instance, 
+                                                    queryTrackingBehavior: TrackAll, 
+                                                    structuralType: [LIFTABLE Constant: EntityType: Question | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("QuizApp.Models.Question")]) : default(void);
+                                                return instance;
+                                            }}
+                                    default: 
+                                        default(Question)
+                                }
+                                ;
+                                entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                    entityType: entityType2, 
+                                    entity: instance2, 
+                                    snapshot: shadowSnapshot2);
+                                return instance2;
+                            } : default(void);
+                            return instance2;
+                        };
+                        resultContext.Values = new object[]{ entity };
+                        ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Question, Question>(
+                            collectionId: 1, 
+                            queryContext: queryContext, 
+                            dbDataReader: dataReader, 
+                            resultCoordinator: resultCoordinator, 
+                            entity: (Question)(resultContext.Values[0]), 
+                            parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                            navigation: [LIFTABLE Constant: Navigation: Question.Options (ICollection<Option>) Collection ToDependent Option Inverse: question | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options")], 
+                            clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{9} => namelessParameter{9}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()], 
+                            trackingQuery: True, 
+                            setLoaded: True);
+                    } : default(void);
+                    ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Question, Option>(
+                        collectionId: 1, 
+                        queryContext: queryContext, 
+                        dbDataReader: dataReader, 
+                        resultCoordinator: resultCoordinator, 
+                        parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6) }], 
+                        selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]{ dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11) }], 
+                        parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && (string)left == (string)right }], 
+                        innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                        {
+                            Option entity;
+                            entity = 
+                            {
+                                MaterializationContext materializationContext3;
+                                IEntityType entityType3;
+                                Option instance3;
+                                InternalEntityEntry entry3;
+                                bool hasNullKey3;
+                                materializationContext3 = new MaterializationContext(
+                                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                                    queryContext.Context
+                                );
+                                instance3 = default(Option);
+                                entry3 = queryContext.TryGetEntry(
+                                    key: [LIFTABLE Constant: Key: Option.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindPrimaryKey()], 
+                                    keyValues: new object[]{ dataReader.IsDBNull(11) ? default(object) : (object)dataReader.GetString(11) }, 
+                                    throwOnNullKey: False, 
+                                    hasNullKey: hasNullKey3);
+                                !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                                {
+                                    entityType3 = entry3.EntityType;
+                                    return instance3 = (Option)entry3.Entity;
+                                } : 
+                                {
+                                    ISnapshot shadowSnapshot3;
+                                    shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                                    entityType3 = [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{10} => namelessParameter{10}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")];
+                                    instance3 = switch (entityType3)
+                                    {
+                                        case [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]: 
+                                            {
+                                                return 
+                                                {
+                                                    Option instance;
+                                                    instance = new Option();
+                                                    instance.<Id>k__BackingField = dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11);
+                                                    instance.<CreatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime) : dataReader.GetDateTime(12);
+                                                    instance.<IsCorrect>k__BackingField = dataReader.IsDBNull(13) ? default(bool) : dataReader.GetBoolean(13);
+                                                    instance.<OptionText>k__BackingField = dataReader.IsDBNull(14) ? default(string) : dataReader.GetString(14);
+                                                    instance.<QuestionId>k__BackingField = dataReader.IsDBNull(15) ? default(string) : dataReader.GetString(15);
+                                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                        context: materializationContext3.Context, 
+                                                        entity: instance, 
+                                                        queryTrackingBehavior: TrackAll, 
+                                                        structuralType: [LIFTABLE Constant: EntityType: Option | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("QuizApp.Models.Option")]) : default(void);
+                                                    return instance;
+                                                }}
+                                        default: 
+                                            default(Option)
+                                    }
+                                    ;
+                                    entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                        entityType: entityType3, 
+                                        entity: instance3, 
+                                        snapshot: shadowSnapshot3);
+                                    return instance3;
+                                } : default(void);
+                                return instance3;
+                            };
+                            return entity;
+                        }, 
+                        inverseNavigation: [LIFTABLE Constant: Navigation: Option.question (Question) ToPrincipal Question Inverse: Options | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("QuizApp.Models.Option").FindNavigation("question")], 
+                        fixup: (namelessParameter{14}, namelessParameter{15}) => 
+                        {
+                            [LIFTABLE Constant: ClrICollectionAccessor<Question, ICollection<Option>, Option> | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Options").GetCollectionAccessor()].Add(
+                                entity: namelessParameter{14}, 
+                                value: namelessParameter{15}, 
+                                forMaterialization: True);
+                            return namelessParameter{15}.<question>k__BackingField = namelessParameter{14};
+                        }, 
+                        trackingQuery: True);
+                    return IsTrue(resultCoordinator.ResultReady)
+                     ? (Question)(resultContext.Values[0]) : default(Question);
+                }, 
+                inverseNavigation: [LIFTABLE Constant: Navigation: Question.Quiz (Quiz) ToPrincipal Quiz Inverse: Questions | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("QuizApp.Models.Question").FindNavigation("Quiz")], 
+                fixup: (namelessParameter{18}, namelessParameter{19}) => 
+                {
+                    [LIFTABLE Constant: ClrICollectionAccessor<Quiz, ICollection<Question>, Question> | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("QuizApp.Models.Quiz").FindNavigation("Questions").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{18}, 
+                        value: namelessParameter{19}, 
+                        forMaterialization: True);
+                    return namelessParameter{19}.<Quiz>k__BackingField = namelessParameter{18};
+                }, 
+                trackingQuery: True);
+            return IsTrue(resultCoordinator.ResultReady)
+             ? (Quiz)(resultContext.Values[0]) : default(Quiz);
+        }, 
+        contextType: QuizApp.Contexts.QuizAppContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-06-10 16:37:54 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 16:37:54 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-06-10 16:37:54 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2025-06-10 16:37:54 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 16:37:54 [INF] Executed DbCommand (73ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Quiz' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:37:54 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:37:54 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 162ms reading results.
+2025-06-10 16:37:54 [DBG] Committing transaction.
+2025-06-10 16:37:54 [DBG] Committed transaction.
+2025-06-10 16:37:54 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:37:54 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (4ms).
+2025-06-10 16:37:54 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-10 16:37:54 [DBG] No information found on request to perform content negotiation.
+2025-06-10 16:37:54 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-10 16:37:54 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-10 16:37:54 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-10 16:37:54 [INF] Executing OkObjectResult, writing value of type 'QuizApp.Models.CompletedQuiz'.
+2025-06-10 16:37:54 [INF] Executed action QuizApp.Controllers.v1.AttemptQuizController.SubmitQuiz (QuizApp) in 2450.0572ms
+2025-06-10 16:37:54 [INF] Executed endpoint 'QuizApp.Controllers.v1.AttemptQuizController.SubmitQuiz (QuizApp)'
+2025-06-10 16:37:54 [DBG] Connection id "0HND81RNEUGT2" completed keep alive response.
+2025-06-10 16:37:54 [DBG] 'QuizAppContext' disposed.
+2025-06-10 16:37:54 [DBG] Disposing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:37:54 [DBG] Disposed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (1ms).
+2025-06-10 16:37:54 [INF] Request finished HTTP/1.1 POST http://localhost:5038/api/v1/attempt-quiz/submit - 200 null application/json; charset=utf-8 2723.558ms
+2025-06-10 16:38:23 [DBG] Connection id "0HND81RNEUGT2" reset.
+2025-06-10 16:38:23 [DBG] Connection id "0HND81RNEUGT2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-10 16:38:23 [DBG] Connection id "0HND81RNEUGT2" disconnecting.
+2025-06-10 16:38:23 [DBG] Connection id "0HND81RNEUGT2" stopped.
+2025-06-10 16:39:50 [DBG] Connection id "0HND81RNEUGT3" accepted.
+2025-06-10 16:39:50 [DBG] Connection id "0HND81RNEUGT3" started.
+2025-06-10 16:39:50 [INF] Request starting HTTP/1.1 GET http://localhost:5038/api/v1/attempt-quiz/QI19755F364084B73 - null null
+2025-06-10 16:39:50 [DBG] 1 candidate(s) found for the request path '/api/v1/attempt-quiz/QI19755F364084B73'
+2025-06-10 16:39:50 [DBG] Endpoint 'QuizApp.Controllers.v1.AttemptQuizController.AttemptQuiz (QuizApp)' with route pattern 'api/v{version:apiVersion}/attempt-quiz/{quizId}' is valid for the request path '/api/v1/attempt-quiz/QI19755F364084B73'
+2025-06-10 16:39:50 [DBG] Request matched endpoint 'QuizApp.Controllers.v1.AttemptQuizController.AttemptQuiz (QuizApp)'
+2025-06-10 16:39:50 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-10 16:39:50 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-06-10 16:39:50 [INF] Executing endpoint 'QuizApp.Controllers.v1.AttemptQuizController.AttemptQuiz (QuizApp)'
+2025-06-10 16:39:50 [INF] Route matched with {action = "AttemptQuiz", controller = "AttemptQuiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AttemptQuiz(System.String) on controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp).
+2025-06-10 16:39:50 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-10 16:39:50 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-10 16:39:50 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","QuizApp.Misc.TransactionFilter","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 16:39:50 [DBG] Execution plan of exception filters (in the following order): ["QuizApp.Misc.CustomException (Order: 0)"]
+2025-06-10 16:39:50 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Asp.Versioning.ReportApiVersionsAttribute (Order: 0)"]
+2025-06-10 16:39:50 [DBG] Executing controller factory for controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp)
+2025-06-10 16:39:50 [DBG] Executed controller factory for controller QuizApp.Controllers.v1.AttemptQuizController (QuizApp)
+2025-06-10 16:39:50 [DBG] Attempting to bind parameter 'quizId' of type 'System.String' ...
+2025-06-10 16:39:50 [DBG] Attempting to bind parameter 'quizId' of type 'System.String' using the name 'quizId' in request data ...
+2025-06-10 16:39:50 [DBG] Done attempting to bind parameter 'quizId' of type 'System.String'.
+2025-06-10 16:39:50 [DBG] Done attempting to bind parameter 'quizId' of type 'System.String'.
+2025-06-10 16:39:50 [DBG] Attempting to validate the bound parameter 'quizId' of type 'System.String' ...
+2025-06-10 16:39:50 [DBG] Done attempting to validate the bound parameter 'quizId' of type 'System.String'.
+2025-06-10 16:39:50 [DBG] Entity Framework Core 9.0.5 initialized 'QuizAppContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2025-06-10 16:39:50 [DBG] Creating DbConnection.
+2025-06-10 16:39:50 [DBG] Created DbConnection. (0ms).
+2025-06-10 16:39:50 [DBG] Opening connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:39:50 [DBG] Opened connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:39:50 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-06-10 16:39:50 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-06-10 16:39:50 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-10 16:39:50 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-06-10 16:39:50 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-06-10 16:39:50 [DBG] Executing DbCommand [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 16:39:50 [INF] Executed DbCommand (6ms) [Parameters=[@__key_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT q1."Id", q1."Category", q1."CreatedAt", q1."Title", q1."TotalMarks", q1."UploadedBy", s."Id", s."CreatedAt", s."Mark", s."QuestionText", s."QuizId", s."Id0", s."CreatedAt0", s."IsCorrect", s."OptionText", s."QuestionId"
+FROM (
+    SELECT q."Id", q."Category", q."CreatedAt", q."Title", q."TotalMarks", q."UploadedBy"
+    FROM "Quizzes" AS q
+    WHERE q."Id" = @__key_0
+    LIMIT 1
+) AS q1
+LEFT JOIN (
+    SELECT q0."Id", q0."CreatedAt", q0."Mark", q0."QuestionText", q0."QuizId", o."Id" AS "Id0", o."CreatedAt" AS "CreatedAt0", o."IsCorrect", o."OptionText", o."QuestionId"
+    FROM "Questions" AS q0
+    LEFT JOIN "Options" AS o ON q0."Id" = o."QuestionId"
+) AS s ON q1."Id" = s."QuizId"
+ORDER BY q1."Id", s."Id"
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Quiz' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Question' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Context 'QuizAppContext' started tracking 'Option' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-10 16:39:50 [DBG] Closing data reader to 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:39:50 [DBG] A data reader for 'QuizAppDB' on server 'tcp://localhost:5432' is being disposed after spending 9ms reading results.
+2025-06-10 16:39:50 [DBG] Committing transaction.
+2025-06-10 16:39:50 [DBG] Committed transaction.
+2025-06-10 16:39:50 [DBG] Closing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:39:50 [DBG] Closed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (0ms).
+2025-06-10 16:39:50 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-10 16:39:50 [DBG] No information found on request to perform content negotiation.
+2025-06-10 16:39:50 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-10 16:39:50 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-10 16:39:50 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-10 16:39:50 [INF] Executing OkObjectResult, writing value of type 'QuizApp.DTOs.AttemptQuizResponseDTO'.
+2025-06-10 16:39:50 [INF] Executed action QuizApp.Controllers.v1.AttemptQuizController.AttemptQuiz (QuizApp) in 58.9732ms
+2025-06-10 16:39:50 [INF] Executed endpoint 'QuizApp.Controllers.v1.AttemptQuizController.AttemptQuiz (QuizApp)'
+2025-06-10 16:39:50 [DBG] Connection id "0HND81RNEUGT3" completed keep alive response.
+2025-06-10 16:39:50 [DBG] 'QuizAppContext' disposed.
+2025-06-10 16:39:50 [DBG] Disposing connection to database 'QuizAppDB' on server 'tcp://localhost:5432'.
+2025-06-10 16:39:50 [DBG] Disposed connection to database 'QuizAppDB' on server 'tcp://localhost:5432' (0ms).
+2025-06-10 16:39:50 [INF] Request finished HTTP/1.1 GET http://localhost:5038/api/v1/attempt-quiz/QI19755F364084B73 - 200 null application/json; charset=utf-8 82.1359ms
+2025-06-10 16:40:19 [DBG] Connection id "0HND81RNEUGT3" received FIN.
+2025-06-10 16:40:19 [DBG] Connection id "0HND81RNEUGT3" disconnecting.
+2025-06-10 16:40:19 [DBG] Connection id "0HND81RNEUGT3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-10 16:40:19 [DBG] Connection id "0HND81RNEUGT3" stopped.

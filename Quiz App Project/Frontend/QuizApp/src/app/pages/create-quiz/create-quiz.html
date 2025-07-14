@@ -1,0 +1,214 @@
+<form
+  [formGroup]="quizForm"
+  (ngSubmit)="submitQuiz()"
+  class="space-y-4 max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+>
+  <h2 class="text-3xl font-bold text-center mb-3 text-sky-800">
+    Create New Quiz
+  </h2>
+
+  <h2 class="text-md font-bold text-center mb-6 text-sky-600">
+    Craft Your Challenge — Lay the Next Test in the Nest!
+  </h2>
+  <!-- Title Field -->
+  <div class="space-y-1">
+    <label for="title" class="block text-sm font-medium text-sky-700"
+      >Title:</label
+    >
+    <input
+      id="title"
+      formControlName="title"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200"
+      placeholder="Quiz title"
+    />
+    <div
+      *ngIf="quizForm.get('title')?.invalid && quizForm.get('title')?.touched"
+      class="text-red-500 text-xs animate-pulse"
+    >
+      Title is required
+    </div>
+  </div>
+
+  <!-- Description Field -->
+  <div class="space-y-1">
+    <label for="description" class="block text-sm font-medium text-sky-700"
+      >Description:</label
+    >
+    <textarea
+      id="description"
+      formControlName="description"
+      rows="3"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200"
+      placeholder="Quiz description"
+    ></textarea>
+    <div
+      *ngIf="quizForm.get('description')?.invalid && quizForm.get('description')?.touched"
+      class="text-red-500 text-xs animate-pulse"
+    >
+      Description is required
+    </div>
+  </div>
+
+  <!-- Category Field -->
+  <div class="space-y-1">
+    <label for="category" class="block text-sm font-medium text-sky-700"
+      >Category:</label
+    >
+    <input
+      id="category"
+      formControlName="category"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200"
+      placeholder="Quiz category"
+    />
+    <div
+      *ngIf="quizForm.get('category')?.invalid && quizForm.get('category')?.touched"
+      class="text-red-500 text-xs animate-pulse"
+    >
+      Category is required
+    </div>
+  </div>
+
+  <div class="flex gap-4">
+    <!-- Total Marks Field -->
+    <div class="space-y-1 w-1/2" >
+      <label for="totalMarks" class="block text-sm font-medium text-sky-700"
+        >Total Marks:</label
+      >
+      <input
+        id="totalMarks"
+        type="number"
+        formControlName="totalMarks"
+        class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200"
+        placeholder="Total marks"
+      />
+      <div
+        *ngIf="quizForm.get('totalMarks')?.invalid && quizForm.get('totalMarks')?.touched"
+        class="text-red-500 text-xs animate-pulse"
+      >
+        Please enter a valid number
+      </div>
+    </div>
+
+    <!-- time limit -->
+    <div class="space-y-1 w-1/2">
+      <label for="timeLimit" class="block text-sm font-medium text-sky-700"
+        >Time Limit <span class="text-gray-400">(in minutes):</span></label
+      >
+      <input
+        id="timeLimit"
+        type="number"
+        formControlName="timeLimit"
+        class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200"
+        placeholder="in Minutes"
+      />
+      <div
+        *ngIf="quizForm.get('timeLimit')?.invalid && quizForm.get('timeLimit')?.touched"
+        class="text-red-500 text-xs animate-pulse"
+      >
+        Please enter a valid time
+      </div>
+    </div>
+  </div>
+
+  <!-- Uploaded By Field -->
+  <div class="space-y-1">
+    <label for="uploadedBy" class="block text-sm font-medium text-sky-700"
+      >Uploaded By:</label
+    >
+    <input
+      id="uploadedBy"
+      formControlName="uploadedBy"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400 transition-all duration-200 cursor-not-allowed"
+      placeholder="Your name"
+    />
+  </div>
+
+  <!-- Questions Section -->
+  <div formArrayName="questions" class="space-y-4">
+    <ng-container *ngFor="let question of questions.controls; let i = index">
+      <app-question
+        [questionGroup]="getQuestionGroup(i)"
+        [questionIndex]="i"
+        (removeQuestion)="removeQuestion(i)"
+        class="block p-4 border border-sky-200 rounded-lg bg-sky-50 hover:bg-sky-100 transition-all duration-300"
+      ></app-question>
+    </ng-container>
+  </div>
+
+  <p class="text-sm text-emerald-500 font-semibold animate-pulse">Note: You can add questions through the "Add Question" button or by uploading an Excel file in below bulk operations section.</p>
+  <!-- Buttons Section -->
+  <div class="flex justify-between items-center mt-6">
+    <div class="flex flex-wrap gap-4 pt-4">
+      <button
+        type="button"
+        (click)="addQuestion()"
+        class="px-4 py-2 font-medium text-white bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-lg shadow-md hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 hover:scale-105"
+      >
+        Add Question
+      </button>
+
+      <button
+        type="submit"
+        [disabled]="quizForm.invalid"
+        class="px-4 py-2 font-medium text-white bg-gradient-to-r from-sky-500 to-sky-600 rounded-lg shadow-md hover:from-sky-600 hover:to-sky-700 transition-all duration-300 hover:scale-105 disabled:bg-gray-400 disabled:shadow-none disabled:cursor-not-allowed"
+        [ngClass]="{ 'opacity-50 cursor-not-allowed': quizForm.invalid }"
+      >
+        Submit Quiz
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        (click)="clearform()"
+        class="px-4 py-2 font-medium text-white bg-gradient-to-r from-red-500 to-red-600 rounded-lg shadow-md hover:from-red-600 hover:to-red-700 transition-all duration-300 hover:scale-105"
+      >
+        Clear Form Data
+      </button>
+    </div>
+  </div>
+</form>
+
+<!-- File Operations Section -->
+<div
+  class="max-w-6xl mx-auto mt-6 p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+>
+  <h3 class="text-lg font-medium text-sky-700 mb-4">Bulk Operations</h3>
+
+  <div class="flex flex-wrap gap-4">
+    <div *ngIf="isloading">
+      <div class="w-10 h-10">
+        <!-- <i class="fa-solid fa-spinner animate-spin text-sky-500"></i> -->
+        <app-loading></app-loading>
+      </div>
+    </div>
+
+    <button
+      (click)="downloadTemplate()"
+      class="px-4 py-2 font-medium text-white bg-gradient-to-r from-amber-500 to-amber-600 rounded-lg shadow-md hover:from-amber-600 hover:to-amber-700 transition-all duration-300 hover:scale-105"
+    >
+      Download Template
+    </button>
+
+    <div class="relative flex-grow">
+      <input
+        type="file"
+        (change)="onFileSelected($event)"
+        accept=".xlsx"
+        class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+        id="fileInput"
+      />
+      <label
+        for="fileInput"
+        class="block w-full p-2 text-center font-medium text-sky-700 border-2 border-dashed border-sky-300 rounded-lg cursor-pointer hover:bg-sky-50 transition-all duration-300"
+      >
+        Upload Excel File
+      </label>
+    </div>
+  </div>
+  <div
+    *ngIf="fileuploadErrorMessage"
+    class="mt-4 p-2 text-red-500 bg-red-50 border border-red-200 rounded-lg"
+  >
+    <i class="fa-solid fa-exclamation-triangle mr-2"></i>
+    {{ fileuploadErrorMessage }}
+</div>

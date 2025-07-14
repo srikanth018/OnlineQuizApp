@@ -1,0 +1,12 @@
+<div class="flex flex-row gap-4 items-center">
+  <img 
+    src="/success.png" 
+    alt="success"
+    class="animate-[spin_2s_ease-in-out_1] w-16 h-16"
+  >
+
+  <!-- Message with smooth fade-in + slide -->
+  <p *ngIf="showMessage" class="fade-in text-lg font-bold text-sky-700">
+    {{ message }}
+  </p>
+</div>

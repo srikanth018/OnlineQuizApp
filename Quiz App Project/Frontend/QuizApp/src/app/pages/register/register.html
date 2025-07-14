@@ -1,0 +1,205 @@
+<h2 class="text-3xl font-bold text-center mb-4 text-sky-800 font-mono">
+  Sign Up here
+</h2>
+
+<h2 class="text-lg font-bold text-center mb-4 text-sky-600 font-mono">
+  Ready to Hatch? Create Your Nest Account!
+</h2>
+
+<label for="role" class="block mb-1 text-sm font-medium text-sky-700"
+  >Please Select a Role to Register</label
+>
+<select
+  name="role"
+  id="role"
+  [(ngModel)]="selectedRole"
+  class="block w-full p-2 mb-4 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50"
+>
+  <option value="Teacher">Teacher</option>
+  <option value="Student">Student</option>
+</select>
+
+@if(selectedRole) {
+<form
+  [formGroup]="registerForm"
+  (ngSubmit)="onSubmit()"
+  class="space-y-4 max-w-md mx-auto"
+>
+  <div>
+    <label for="name" class="block mb-1 text-sm font-medium text-sky-700"
+      >Name</label
+    >
+    <input
+      type="text"
+      id="name"
+      formControlName="name"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+      placeholder="Your full name"
+    />
+    @if(registerForm.get('name')?.invalid && registerForm.get('name')?.dirty) {
+    @if(registerForm.get('name')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Name is required</span>
+    } @if(registerForm.get('name')?.hasError('shortNameError')){
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('name')?.errors?.['shortNameError'] }}</span
+    >
+    } @if(registerForm.get('name')?.hasError('invalidNameError')){
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('name')?.errors?.['invalidNameError'] }}</span
+    >
+    } @if(registerForm.get('name')?.hasError('forbiddenNameError')){
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('name')?.errors?.['forbiddenNameError'] }}</span
+    >
+    } }
+  </div>
+
+  <div>
+    <label for="email" class="block mb-1 text-sm font-medium text-sky-700"
+      >Email</label
+    >
+    <input
+      type="email"
+      id="email"
+      formControlName="email"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+      placeholder="your@email.com"
+    />
+    @if(registerForm.get('email')?.invalid && registerForm.get('email')?.dirty)
+    { @if(registerForm.get('email')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Email is required</span>
+    } @if(registerForm.get('email')?.hasError('email')) {
+    <span class="text-red-500 text-xs">Invalid email format</span>
+    } }
+  </div>
+
+  <div>
+    <label for="phoneNumber" class="block mb-1 text-sm font-medium text-sky-700"
+      >Phone Number</label
+    >
+    <input
+      type="text"
+      id="phoneNumber"
+      formControlName="phoneNumber"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+      placeholder="9361039452"
+    />
+    @if(registerForm.get('phoneNumber')?.invalid &&
+    registerForm.get('phoneNumber')?.dirty) {
+    @if(registerForm.get('phoneNumber')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Phone number is required</span>
+    } @if(registerForm.get('phoneNumber')?.hasError('pattern')) {
+    <span class="text-red-500 text-xs">Invalid phone number format</span>
+    } }
+  </div>
+
+  @if(selectedRole === 'Student') {
+  <div>
+    <label
+      for="highestQualification"
+      class="block mb-1 text-sm font-medium text-sky-700"
+    >
+      Highest Qualification
+    </label>
+    <select
+      id="highestQualification"
+      formControlName="highestQualification"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+    >
+      <option value="">Select Qualification</option>
+      <option value="High School">High School</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Diploma">Diploma</option>
+      <option value="Bachelor's Degree">Bachelor's Degree</option>
+      <option value="Master's Degree">Master's Degree</option>
+      <option value="Doctorate (PhD)">Doctorate (PhD)</option>
+      <option value="Other">Other</option>
+    </select>
+    @if(registerForm.get('highestQualification')?.invalid &&
+    registerForm.get('highestQualification')?.dirty) {
+    @if(registerForm.get('highestQualification')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Highest qualification is required</span>
+    } }
+  </div>
+
+  <div>
+    <label for="dateOfBirth" class="block mb-1 text-sm font-medium text-sky-700"
+      >Date of Birth</label
+    >
+    <input
+      type="date"
+      id="dateOfBirth"
+      formControlName="dateOfBirth"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+    />
+    @if(registerForm.get('dateOfBirth')?.invalid &&
+    registerForm.get('dateOfBirth')?.dirty) {
+    @if(registerForm.get('dateOfBirth')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Date of birth is required</span>
+    } }
+  </div>
+  }
+
+  <div>
+    <label for="password" class="block mb-1 text-sm font-medium text-sky-700"
+      >Password</label
+    >
+    <input
+      type="password"
+      id="password"
+      formControlName="password"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+      placeholder="Create a password"
+    />
+    @if(registerForm.get('password')?.invalid &&
+    registerForm.get('password')?.dirty) {
+    @if(registerForm.get('password')?.errors?.['required']) {
+    <span class="text-red-500 text-xs">Password is required</span>
+    } @else if(registerForm.get('password')?.hasError('passSymError')) {
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('password')?.errors?.['passSymError'] }}</span
+    >
+    } @if(registerForm.get('password')?.hasError('passLenError')) {
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('password')?.errors?.['passLenError'] }}</span
+    >
+    } @if(registerForm.get('password')?.hasError('passNumError')) {
+    <span class="text-red-500 text-xs"
+      >{{ registerForm.get('password')?.errors?.['passNumError'] }}</span
+    >
+    } }
+  </div>
+
+  <div>
+    <label
+      for="confirmPassword"
+      class="block mb-1 text-sm font-medium text-sky-700"
+      >Confirm Password</label
+    >
+    <input
+      type="password"
+      id="confirmPassword"
+      formControlName="confirmPassword"
+      class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+      placeholder="Confirm your password"
+    />
+    @if(registerForm.get('confirmPassword')?.dirty) {
+    @if(registerForm.get('confirmPassword')?.hasError('required')) {
+    <span class="text-red-500 text-xs">Confirm password is required</span>
+    } @if(registerForm.hasError('passwordMismatch')) {
+    <span class="text-red-500 text-xs">Passwords do not match</span>
+    } @else if(registerForm.get('confirmPassword')?.valid &&
+    !registerForm.hasError('passwordMismatch')) {
+    <span class="text-green-500 text-xs">Password matches</span>
+    } }
+  </div>
+  
+  <button
+    type="submit"
+    [disabled]="registerForm.invalid"
+    class="w-full p-3 font-medium text-white bg-gradient-to-r from-sky-500 to-sky-700 rounded-lg shadow-md shadow-sky-200 hover:from-sky-600 hover:to-sky-800 transition disabled:bg-gray-400 disabled:shadow-none"
+  >
+    Register
+  </button>
+</form>
+}

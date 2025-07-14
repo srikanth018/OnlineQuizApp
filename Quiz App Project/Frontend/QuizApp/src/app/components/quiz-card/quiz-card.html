@@ -1,0 +1,75 @@
+@if(type === 'list'){
+  <div class="p-4 bg-white border border-gray-200 rounded-lg flex flex-col gap-3 transition-all duration-300 hover:shadow-md hover:border-sky-400 hover:bg-sky-50">
+    
+    <!-- Header Section -->
+    <div class="flex items-center justify-between mb-1">
+      <h1 class="text-xl font-bold text-sky-800 truncate max-w-[70%]">{{ quiz?.title }}</h1>
+      <div class="flex items-center gap-2 text-gray-600 bg-sky-100 px-2 py-1 rounded">
+        <i class="fa-solid fa-pen-fancy text-sky-500 text-sm"></i>
+        <p class="text-sm">
+          <span class="font-medium">Marks:</span>
+          <span class="text-sky-600 font-semibold ml-1">{{ quiz?.totalMarks }}</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="mb-2">
+      <p class="text-gray-700 text-sm text-justify leading-relaxed">
+        {{
+          showFullDescription
+            ? quiz?.description
+            : ((quiz?.description ?? '').split(' ').slice(0, 40).join(' ') + 
+                        ((quiz?.description ?? '').split(' ').length > 40 ? '...' : ''))
+        }}
+        <span *ngIf="(quiz?.description ?? '').split(' ').length > 40"
+        (click)="showFullDescription = !showFullDescription"
+        class="mt-1 text-sky-500 hover:underline text-xs font-medium cursor-pointer ml-1">
+          {{ showFullDescription ? 'Read less' : 'Read more' }}
+        </span>
+      </p>
+    </div>
+
+    <!-- Info Section -->
+    <div class="flex flex-wrap justify-between gap-2 text-sm text-gray-700 mt-auto">
+      
+      <!-- Category -->
+      <div class="flex items-center gap-1 bg-purple-50 px-2 py-1 rounded">
+        <i class="fa-solid fa-layer-group text-purple-500 text-xs"></i>
+        <p class="text-xs">
+          <span class="font-medium">Category:</span>
+          <span class="text-purple-700 ml-1">{{ quiz?.category }}</span>
+        </p>    
+      </div>
+
+      <!-- Created At -->
+      <div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded">
+        <i class="fa-regular fa-calendar-days text-green-500 text-xs"></i>
+        <p class="text-xs">
+          <span class="font-medium">Created:</span>
+          <span class="text-green-700 ml-1">{{ quiz?.createdAt?.slice(0,10) }}</span>
+        </p>
+      </div>
+
+      <!-- Question Count -->
+      <div class="flex items-center gap-1 bg-rose-50 px-2 py-1 rounded">
+        <i class="fa-regular fa-circle-question text-rose-500 text-xs"></i>
+        <p class="text-xs">
+          <span class="font-medium">Questions:</span>
+          <span class="text-rose-700 ml-1">{{ quiz?.questions?.$values?.length || 0 }}</span>
+        </p>
+      </div>
+
+      <!-- Time Limit -->
+      <div class="flex items-center gap-1 bg-amber-50 px-2 py-1 rounded">
+        <i class="fas fa-stopwatch text-amber-500 text-xs"></i>
+        <p class="text-xs">
+          <span class="font-medium">Time Limit:</span>
+          <span class="text-amber-700 ml-1">{{ quiz?.timeLimit}} mins</span>
+        </p>
+      </div>
+    </div>
+  </div>
+}
+
+@else if (type === 'grid') { }

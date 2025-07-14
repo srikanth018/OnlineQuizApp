@@ -1,0 +1,108 @@
+<h2 class="text-3xl font-bold text-center mb-3 text-sky-800">
+  Completed Quizzes
+</h2>
+
+<h2 class="text-md font-bold text-center mb-6 text-sky-600">
+  Every quiz completed is a feather in your nest — keep soaring with TestNest!
+</h2>
+
+<div
+  class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+>
+  <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="relative flex-grow-2">
+      <div
+        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+      >
+        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+      </div>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search Quizzes here..."
+        #searchInput
+        class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-500 text-sm transition duration-200 placeholder:text-gray-400"
+        (input)="searchValue = searchInput.value; filterSearchQuizzes()"
+      />
+    </div>
+
+    <!-- Category Select -->
+    <div class="relative flex-grow-1">
+      <div
+        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+      >
+        <i class="fa-solid fa-layer-group text-gray-400"></i>
+      </div>
+      <select
+        name="category"
+        id="category"
+        class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 text-sm appearance-none transition duration-200"
+        (change)="categoryValue = selectedCategory.value; filterSearchQuizzes()"
+        #selectedCategory
+      >
+        <option *ngFor="let category of categoryList" [value]="category.value">
+          {{ category.label }}
+        </option>
+      </select>
+
+      <div
+        class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"
+      >
+        <i class="fa-solid fa-chevron-down text-gray-400 text-xs"></i>
+      </div>
+    </div>
+  </div>
+
+<div >
+  <div *ngFor="let quiz of filteredQuizzes" class="p-6 border-b-2 border-gray-100 hover:bg-sky-50 hover:border-2 hover:rounded-lg hover:border-sky-400 transition-colors duration-150">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <!-- Left Content -->
+      <div class="flex-1 ">
+        <div class="flex items-center gap-2 mb-2">
+          <h3 class="text-lg font-semibold text-sky-800 truncate">
+            {{ quiz.quizData.title }}
+          </h3>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+          <!-- Completion Date -->
+          <div class="flex items-center text-gray-600">
+            <i class="fas fa-calendar-check text-gray-400 mr-2 w-4"></i>
+            <span>Completed: {{ quiz.createdAt.slice(0, 10) }}</span>
+          </div>
+          
+          <!-- Score -->
+          <div class="flex items-center ">
+            <i class="fas fa-star text-amber-400 mr-2 w-4"></i>
+            <span class="text-gray-600">
+              Score: 
+              <span class="font-medium text-sky-700">{{ quiz.totalScore }}</span>
+              <span class="text-gray-400">/{{ quiz.quizData.totalMarks }}</span>
+            </span>
+          </div>
+          
+          <!-- Category -->
+          <div class="flex items-center text-gray-600">
+            <i class="fas fa-tag mr-2 w-4 text-gray-400"></i>
+            <span class="">{{ quiz.quizData.category }}</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Button -->
+      <div class="flex-shrink-0">
+        <button 
+          class="flex items-center gap-2 hover:bg-sky-100 text-sky-600 px-4 py-2 rounded-lg transition-colors duration-200 cursor-pointer"
+          (click)="viewCompletedQuiz(quiz.id)"
+        >
+          
+          <span>View Details</span>
+        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

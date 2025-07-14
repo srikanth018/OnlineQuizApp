@@ -1,0 +1,116 @@
+<div
+  [formGroup]="questionGroup"
+  class="question-box p-4 border border-sky-200 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300"
+>
+  <h4 class="text-lg font-medium text-sky-700 mb-3">
+    Question {{ questionIndex + 1 }}
+  </h4>
+
+  <div class="flex gap-3">
+    <!-- Question Text -->
+    <div class="space-y-1 mb-3 w-5/6">
+      <label class="block text-sm font-medium text-sky-700"
+        >Question Text:</label
+      >
+      <textarea
+        formControlName="questionText"
+        class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+        rows="1"
+        placeholder="Enter question text"
+      ></textarea>
+      <div
+        *ngIf="
+    questionGroup.get('questionText')?.invalid &&
+    questionGroup.get('questionText')?.touched
+  "
+        class="text-red-500 text-xs animate-pulse mt-1"
+      >
+        <div *ngIf="questionGroup.get('questionText')?.errors?.['required']">
+          Question text is required.
+        </div>
+        <div *ngIf="questionGroup.get('questionText')?.errors?.['minlength']">
+          Minimum 10 characters required.
+        </div>
+      </div>
+    </div>
+
+    <!-- Marks -->
+    <div class="space-y-1 mb-3 w-1/6">
+      <label class="block text-sm font-medium text-sky-700">Marks:</label>
+      <input
+        type="number"
+        formControlName="mark"
+        class="w-full p-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/50 placeholder:text-gray-400"
+        placeholder="Enter marks"
+      />
+      <div
+        *ngIf="
+    questionGroup.get('mark')?.invalid &&
+    questionGroup.get('mark')?.touched
+  "
+        class="text-red-500 text-xs animate-pulse mt-1"
+      >
+        <div *ngIf="questionGroup.get('mark')?.errors?.['required']">
+          Marks are required.
+        </div>
+        <div *ngIf="questionGroup.get('mark')?.errors?.['min']">
+          Marks must be at least 1.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Options -->
+  <div formArrayName="options" class="mb-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div
+        *ngFor="let option of options.controls; let j = index"
+        [formGroupName]="j"
+        class="option-item p-3 border border-sky-100 rounded-lg bg-sky-50 hover:bg-sky-100 transition-all duration-200"
+      >
+        <div class="flex flex-col h-full">
+          <input
+            formControlName="optionText"
+            placeholder="Option Text"
+            class="w-full p-2 mb-2 border border-sky-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white/70 placeholder:text-gray-400"
+          />
+          <div class="flex items-center justify-between mt-auto">
+            <label class="flex items-center gap-2 text-sm text-sky-700">
+              Correct:
+              <input
+                type="checkbox"
+                formControlName="isCorrect"
+                class="h-4 w-4 text-sky-600 focus:ring-sky-500 border-sky-300 rounded"
+              />
+            </label>
+            <button
+              type="button"
+              (click)="removeOption(j)"
+              class="px-2 py-1 text-xs font-medium text-red-600 bg-red-50 rounded hover:bg-red-100 transition-all duration-200"
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Buttons -->
+  <div class="flex flex-wrap gap-2">
+    <button
+      type="button"
+      (click)="addOption()"
+      class="px-3 py-1 text-sm font-medium text-white bg-emerald-500 rounded hover:bg-emerald-600 transition-all duration-200"
+    >
+      Add Option
+    </button>
+    <button
+      type="button"
+      (click)="removeQuestion.emit(questionIndex)"
+      class="px-3 py-1 text-sm font-medium text-white bg-red-500 rounded hover:bg-red-600 transition-all duration-200"
+    >
+      Remove Question
+    </button>
+  </div>
+</div>

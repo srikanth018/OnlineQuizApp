@@ -1,0 +1,184 @@
+<div class="bg-gray-200 min-h-screen">
+  <div class="flex items-center bg-white h-20 justify-between px-6 shadow-lg">
+    <div class="flex flex-col items-center group cursor-pointer">
+      <h1
+        class="text-4xl ml-5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-sky-700 font-mono tracking-tighter transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-sky-600 group-hover:to-sky-800 hover:scale-105"
+      >
+        T<span class="text-2xl">est</span>N<span class="text-2xl">est</span>
+      </h1>
+      <div
+        class="w-12 h-1 bg-gradient-to-r from-sky-700 to-sky-400 rounded-full mt-1 group-hover:from-sky-800 group-hover:to-sky-500 transition-all duration-300 group-hover:w-14"
+      ></div>
+    </div>
+
+    <h2 class="text-3xl font-bold text-center text-sky-800 px-4 mr-28">
+      {{quiz?.title}}
+    </h2>
+
+    <div class="gap-5 flex items-center justify-center">
+      <button
+        
+      >
+        
+      </button>
+    </div>
+  </div>
+  <!-- main -->
+  <div>
+    @if(!isStarted && !isCompleted){
+    <div class="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-2xl mt-10">
+      <h2 class="text-2xl font-bold text-center mb-6 text-sky-700">
+        Quiz Participation Agreement
+      </h2>
+
+      <form [formGroup]="agreementForm" class="space-y-4">
+        <div *ngFor="let rule of rules; let i = index" class="flex items-start">
+          <label class="text-gray-800">
+            <input
+              type="checkbox"
+              class="mt-1.5 mr-3 accent-sky-300"
+              [formControlName]="i"
+            />
+            {{ rule }}</label
+          >
+        </div>
+
+        <button
+          type="button"
+          [disabled]="agreementForm.invalid"
+          (click)="startQuiz()"
+          class="w-full mt-6 bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-xl disabled:opacity-50"
+        >
+          Start Quiz
+        </button>
+      </form>
+    </div>
+    } @else if(isStarted && !isCompleted){
+    <app-display-questions
+      [quizId]="quiz?.id"
+      (submitQuiz)="handleQuizSubmit($event)"
+    ></app-display-questions>
+    }
+    <div *ngIf="isCompleted" class="max-w-2xl mx-auto p-6">
+      <!-- Loader that shows for 2 seconds -->
+      <div
+        *ngIf="showLoader"
+        class="flex flex-col items-center justify-center p-8 bg-white rounded-xl shadow-lg"
+      >
+        <div class="w-16 h-16 mb-4">
+          <app-loading></app-loading>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-700">
+          Calculating your results...
+        </h3>
+      </div>
+
+      <!-- Results Card (shown after loader) -->
+      <div
+        *ngIf="!showLoader"
+        class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 transform hover:scale-[1.01]"
+      >
+        <!-- Header with confetti effect -->
+        <div
+          class="bg-gradient-to-r from-sky-500 to-sky-600 p-6 text-center relative overflow-hidden"
+        >
+          <h2 class="text-2xl font-bold text-white mb-2 relative z-10">
+            Quiz Completed!
+          </h2>
+          <p class="text-sky-100 relative z-10">
+            Awesome work! You've successfully broken a shell with TestNest
+          </p>
+        </div>
+
+        <!-- Results Body -->
+        <div class="p-6 space-y-6">
+          <div
+            class="flex items-center justify-between p-4 bg-sky-50 rounded-lg"
+          >
+            <div class="flex items-center space-x-3">
+              <div class="p-2 bg-sky-100 rounded-full">
+                <i class="fa-solid fa-trophy text-sky-600"></i>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-500">Your Score</p>
+                <p class="text-2xl font-bold text-sky-700">
+                  {{ response?.totalScore || 0 }} points
+                </p>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-sm font-medium text-gray-500">Percentage</p>
+              <p class="text-xl font-bold text-sky-700">
+                {{ ((response?.totalScore || 0) / totalPossibleScore * 100).toFixed(2) }}%
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-gray-50 rounded-lg">
+              <p class="text-sm font-medium text-gray-500">Started At</p>
+              <p class="font-medium">{{ response?.startedAt.slice(0,10) }}</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-lg">
+              <p class="text-sm font-medium text-gray-500">Completed At</p>
+              <p class="font-medium">{{ response?.endedAt.slice(0,10) }}</p>
+            </div>
+          </div>
+          <div class="p-4 bg-amber-50 rounded-lg">
+            <p class="text-sm font-medium text-gray-500">Completed within</p>
+            <p class="font-medium">
+              {{ getDurationInMinutes(response?.startedAt, response?.endedAt) }}
+              minute(s)
+            </p>
+          </div>
+
+          <div class="p-4 bg-green-50 rounded-lg border border-green-100">
+            <div class="flex items-center space-x-3">
+              <div class="p-2 bg-green-100 rounded-full">
+                <i class="fa-solid fa-check text-green-600"></i>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-700">
+                  Successfully submitted
+                </p>
+                <p class="text-xs text-gray-500">
+                  Your results have been saved in the Nest
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer with action button -->
+        <div class="bg-gray-50 px-6 py-4 flex justify-center">
+          <button
+            (click)="backToQuizzes()"
+            class="px-6 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition-colors duration-200 font-medium flex items-center space-x-2"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Quizzes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="openbutton"
+  class="fixed inset-0 flex items-center justify-center z-50 bg-transparent backdrop-blur-sm"
+>
+  <div class="bg-white rounded-lg shadow-lg w-96 p-6 border-2 border-sky-400 relative flex flex-col items-center " >
+    <h2 class="text-xl font-bold mb-4">Warning</h2>
+    <p class="mb-4">Enter FullScreen mode to continue quiz</p>
+    <button
+      class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded"
+      (click)="enterFullScreen()"
+    >
+       Enter FullScreen <i class="fa-solid fa-expand ml-3"></i>
+    </button>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

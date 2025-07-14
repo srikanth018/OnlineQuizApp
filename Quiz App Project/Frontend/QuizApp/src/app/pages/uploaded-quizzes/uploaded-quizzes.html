@@ -1,0 +1,99 @@
+<div
+  class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+>
+  <h2 class="text-3xl font-bold text-center mb-3 text-sky-800">
+    Uploaded Quizzes
+  </h2>
+
+  <h2 class="text-md font-bold text-center mb-6 text-sky-600">
+    TestNest Archive - Track your Hatched Tests!!!
+  </h2>
+
+  <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="relative flex-grow-2">
+      <div
+        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+      >
+        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+      </div>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search Quizzes here..."
+        class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-1 focus:ring-sky-400 focus:border-sky-500 text-sm transition duration-200 placeholder:text-gray-400"
+        (input)="filterSearchQuizzes(searchInput.value, selectedCategory)"
+        #searchInput
+      />
+    </div>
+
+    <!-- Category Select -->
+    <div class="relative flex-grow-1">
+      <div
+        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+      >
+        <i class="fa-solid fa-layer-group text-gray-400"></i>
+      </div>
+      <select
+        [(ngModel)]="selectedCategory"
+        (change)="filterSearchQuizzes(searchInput.value, selectedCategory)"
+        name="category"
+        id="category"
+        class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 text-sm appearance-none transition duration-200"
+      >
+        <option *ngFor="let category of categoryList" [value]="category.value">{{ category.label }}</option>
+      </select>
+      <div
+        class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"
+      >
+        <i class="fa-solid fa-chevron-down text-gray-400 text-xs"></i>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="flex justify-center items-center">
+    <div class="w-30 h-30">
+      <app-loading></app-loading>
+    </div>
+  </div>
+
+  <!-- Quiz List -->
+  <div *ngIf="!isLoading && filteredQuizzes.length > 0" class="grid gap-4">
+    <div *ngFor="let quiz of filteredQuizzes" class="m-1">
+      <app-quiz-card [quiz]="quiz" [type]="'list'" (click)="viewQuizById(quiz.id)"></app-quiz-card>
+    </div>
+
+    <div class="flex justify-center items-center gap-4 mt-6">
+      <button
+        (click)="prevPage()"
+        [disabled]="currentPage === 1"
+        class="px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 font-medium text-sm transition-colors duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:hover:bg-gray-300"
+      >
+        Previous
+      </button>
+
+      <span class="text-sm text-gray-700 font-medium">
+        Page <span class="font-bold text-sky-600">{{ currentPage }}</span> of {{
+        totalPages }}
+      </span>
+
+      <button
+        (click)="nextPage()"
+        [disabled]="currentPage * pageSize >= total"
+        class="px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 font-medium text-sm transition-colors duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:hover:bg-gray-300"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+
+  <!-- No Quizzes Message -->
+  <div
+    *ngIf="!isLoading && filteredQuizzes.length === 0"
+    class="text-center text-gray-600 text-sm mt-4"
+  >
+    No quizzes uploaded yet.
+  </div>
+</div>
+
+<router-outlet></router-outlet>

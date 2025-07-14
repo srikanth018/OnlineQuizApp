@@ -1,0 +1,64 @@
+<div class="fixed top-20 left-0 h-[calc(100%-5rem)] w-48 flex flex-col justify-between bg-white px-3 pb-6 border-r border-gray-100 shadow-sm z-10">
+
+  <div class="flex flex-col gap-2 mt-4">
+
+    <a [routerLink]="(userRole === 'Teacher') ? '/main/teacher-dashboard' : '/main/student-dashboard'"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group text-md">
+      <i class="fa-solid fa-gauge-high text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Dashboard</span>
+    </a>
+@if(userRole === 'Teacher') {
+    <a routerLink="/main/create-quiz"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-pen-to-square text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Add Quiz</span>
+    </a>
+
+    <a routerLink="/main/uploaded-quizzes"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-folder-open text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Uploaded</span>
+    </a>
+
+    <!-- <a routerLink="/main/notifications"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-bell text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Notifications</span>
+    </a> -->
+  }
+  @if(userRole === 'Student') {
+    <a routerLink="/main/available-quizzes"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-folder-open text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Quizzes</span>
+    </a>
+    <a routerLink="/main/quiz-history"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-bell text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>History</span>
+    </a>
+
+    <a routerLink="/main/leader-board"
+       routerLinkActive="bg-sky-50 text-sky-700 border-l-4 border-sky-500"
+       class="flex items-center gap-3 px-4 py-3 rounded-r-md text-gray-600 hover:bg-sky-50 hover:text-sky-700 transition-all duration-200 font-medium group">
+      <i class="fa-solid fa-trophy text-gray-500 group-hover:text-sky-600 group-[.active]:text-sky-600"></i>
+      <span>Leader Board</span>
+    </a>
+  }
+
+  </div>
+
+  <div class="px-3">
+    <button class="flex items-center justify-center gap-2 w-full px-2 py-2 bg-red-100 text-red-700 rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-200 font-medium border border-red-300 active:scale-[0.98] cursor-pointer" (click)="logout()">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      <span>Logout</span>
+    </button>
+  </div>
+
+</div>

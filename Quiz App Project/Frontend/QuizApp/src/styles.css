@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+/* @import   "node_modules/primeng/resources/primeng.min.css";
+@import  "node_modules/primeicons/primeicons.css"; */
+@import '../node_modules/ngx-toastr/toastr.css';
+
+/* Fix Tailwind reset issues */
+#toast-container {
+  position: fixed !important;
+  z-index: 999999 !important;
+  pointer-events: auto !important;
+}
+
+.toast {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast-success {
+  background-color: #22c55e;
+  color: white;
+}
+
+.toast-error {
+  background-color: #ef4444;
+  color: white;
+}
+
+.toast-info {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.toast-warning {
+  background-color: #facc15;
+  color: black;
+}

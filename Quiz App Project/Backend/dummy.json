@@ -1,0 +1,28 @@
+{
+  "QuizId": "QI19755F364084B73",
+  "StudentEmail": "student1@gmail.com",
+  "StartedAt": "2025-06-10T10:00:00",
+  "EndedAt": "2025-06-10T10:10:00",
+  "Questions": [
+    {
+      "QuestionId": "QU19755F3640A078C",
+      "SelectedOptionIds": ["OP19755F3640D72D0"]  
+    },
+    {
+      "QuestionId": "QU19755F3640D4C0D",
+      "SelectedOptionIds": ["OP19755F3640D5014"]  
+    },
+    {
+      "QuestionId": "QU19755F3640D8E2A",
+      "SelectedOptionIds": ["OP19755F3640D606A"]  
+    },
+    {
+      "QuestionId": "QU19755F3640D9257",
+      "SelectedOptionIds": ["OP19755F3640DC345"]  
+    },
+    {
+      "QuestionId": "QU19755F3640DACF7",
+      "SelectedOptionIds": ["OP19755F3640D18D5"] 
+    }
+  ]
+}

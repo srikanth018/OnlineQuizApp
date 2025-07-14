@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Notification</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+  </head>
+  <body>
+    <h1>Quiz Notifications</h1>
+    <div id="notifications" style="margin-top: 20px"></div>
+
+    <script>
+      // Create connection to the SignalR hub endpoint
+      const connection = new signalR.HubConnectionBuilder()
+        .withUrl("http://localhost:5038/quizHub", {
+          withCredentials: true, // required if Authorization header or cookies are sent
+        })
+        .build();
+
+      // Listen for the 'ReceiveNewQuiz' event from the server
+      connection.on("ReceiveNewQuiz", (category, title) => {
+        const message = `New Quiz Added - Category: <strong>${category}</strong>, Title: <strong>${title}</strong>`;
+        const div = document.createElement("div");
+        div.innerHTML = message;
+        document.getElementById("notifications").prepend(div);
+      });
+
+      // Start the connection
+      connection
+        .start()
+        .then(() => console.log("Connected to QuizHub"))
+        .catch((err) => console.error(" SignalR connection error: ", err));
+    </script>
+  </body>
+</html> -->
